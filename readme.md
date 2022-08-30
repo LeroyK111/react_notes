@@ -841,11 +841,19 @@ npm i mobx-react-lite
 npm i mobx-react
 ```
 
+![image-20220830114619170](readme.assets/image-20220830114619170.png)
+
 ![image-20220830002206856](readme.assets/image-20220830002206856.png)
 
 利用状态树，传递store状态。然后监听observer包裹的组件。
 
-### ★待补充
+类组件，需要包裹一下
+
+### ![image-20220830114504396](readme.assets/image-20220830114504396.png)
+
+函数式组件，则不需要。
+
+![image-20220830115156240](readme.assets/image-20220830115156240.png)
 
 
 

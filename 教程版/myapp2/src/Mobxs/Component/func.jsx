@@ -16,11 +16,12 @@ const CounterFunction = (props) => {
       <button onClick={() => setNum(num + 1)}>set num</button>
 
       {/* 深度监听 store 变化并进行重渲染，导致下面两行结果相同 */}
-      <p>Count: {store.getCount}</p>
-      <Observer>{() => <p>Count2: {store.getCount}</p>}</Observer>
-      <button onClick={() => store.handleCount()}>Counter Add</button>
+      <p>HOOK的组件监听: {store.getCount}</p>
+      <Observer>{() => <p>包裹一下HOOK也是监听: {store.getCount}</p>}</Observer>
+      <button onClick={store.handleCount}>Counter Add</button>
     </div>
   );
 };
 
+// !生成HOC高阶组件
 export default observer(CounterFunction);

@@ -5,7 +5,8 @@ import Func from "./Component/func";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      {/* Counter组件，插槽 */}
       <Counter>
         <Func></Func>
         <Class></Class>
