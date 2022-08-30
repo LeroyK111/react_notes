@@ -1,0 +1,1 @@
+*{margin:0;padding:0;box-sizing:border-box}li{list-style:none}#navbar{width:100%;height:40px;display:flex;position:fixed;bottom:0;justify-content:space-around}#navbar li{flex:1;text-align:center;line-height:40px;font-weight:bold;cursor:pointer}#navbar li:nth-child(1){background-color:skyblue}#navbar li:nth-child(2){background-color:pink}

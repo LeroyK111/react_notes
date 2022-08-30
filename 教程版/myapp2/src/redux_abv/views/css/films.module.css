@@ -1,0 +1,8 @@
+.activeTabar {
+  color: red;
+}
+
+/* 特殊，加入global，即可全局生效 */
+:global(#test) {
+  background-color: red;
+}
