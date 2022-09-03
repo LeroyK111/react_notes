@@ -88,7 +88,19 @@ import { createRoot } from "react-dom/client";
 
 // !Mobx新全局状态管理器
 // import App from "./Mobxs/App";
-import App from "./Mobxs/index.js"
+// import App from "./Mobxs/index.js"
+
+// !样式组件化库
+// import App from "./styled-components/App"
+// import App from "./styled-components/1透传"
+// import App from "./styled-components/2样式化组件"
+// import App from "./styled-components/3anime"
+
+
+// !单元测试
+import App from "./单元测试/App"
+
+
 
 
 const container = document.getElementById("root");

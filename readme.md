@@ -817,9 +817,15 @@ https://mobx.js.org/README.html
 npm install --save mobx
 ```
 
+### 严格模式的坑
+
 坑！！！！**其实关闭严格模式也可以**
 
 ![image-20220829214845652](readme.assets/image-20220829214845652.png)
+
+第二个坑
+
+![image-20220903123306195](readme.assets/image-20220903123306195.png)
 
 实验性功能，使用装饰器语法。
 
@@ -863,6 +869,52 @@ npm i mobx-react
 create-react-app myapp-ts --template typescript
 ```
 
+ts有定义编译成本，多了太多类型提示。
+
+**vscode居然是基于react + Electron构建的桌面应用。**
+
+如果把js重构成ts则要注意了。
+
+### react-class 类组件
+
+![image-20220903100743163](readme.assets/image-20220903100743163-16621709000861.png)
+
+### react-hook 方法组件
+
+![image-20220903104545160](readme.assets/image-20220903104545160.png)
+
+引入一个概念,说明文档
+
+![image-20220903112804520](readme.assets/image-20220903112804520.png)
+
+### router-tsx模式
+
+这里涉及到接口说明文档，一般格式@types/xxxxx
+
+![image-20220903131833783](readme.assets/image-20220903131833783.png)
+
+![image-20220903131754137](readme.assets/image-20220903131754137.png)
+
+
+
+### redux-ts用法
+
+![image-20220903150934576](readme.assets/image-20220903150934576.png)
+
+### antd组件用法
+
+```
+npm i antd-mobile
+```
+
+![image-20220903153606879](readme.assets/image-20220903153606879.png)
+
+
+
+
+
+
+
 
 
 
@@ -879,17 +931,48 @@ CSS组件，模块化。
 npm install --save styled-components
 ```
 
+其实就是利用高阶组件的方法，支持sass语法
+
+![image-20220903165851077](readme.assets/image-20220903165851077.png)
+
+### 透传
+
+![image-20220903171342409](readme.assets/image-20220903171342409.png)
+
+### 高级样式组件的用法
+
+![image-20220903172358951](readme.assets/image-20220903172358951.png)
+
+### 动画
+
+![image-20220903174018278](readme.assets/image-20220903174018278.png)
+
 
 
 ## 单元测试
 
 ```
 npm i react-test-renderer
+# 搭配测试框架
+npm install --save-dev jest
+npm test
 ```
 
+不是白盒测试or黑盒测试。单纯的就是组件测试。
+
+### 浅组件测试
+
+![image-20220903181324580](readme.assets/image-20220903181324580.png)
+
+### 事件触发（不推荐使用，有坑）
+
+### 第三方测试enzyme
+
+![image-20220903191530774](readme.assets/image-20220903191530774.png)
 
 
 
+推荐https://jestjs.io/ 作为最新的测试框架。
 
 
 
@@ -899,6 +982,14 @@ npm i react-test-renderer
 全局监听器，流程管理。
 npm install redux-saga
 ```
+
+![image-20220903191754592](readme.assets/image-20220903191754592.png)
+
+
+
+
+
+
 
 
 

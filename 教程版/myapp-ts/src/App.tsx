@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import React from "react";
+import "./App.css";
+
+// !学习组件
+// import ClassTs from "./components/ClassTs";
+// import FuncTs from "./components/funcTs";
+
+// !案例
+// import Todolist from "./components/demos/todolist";
+// import Props from "./components/demos/Props";
+// import App1 from "./components/demos/抽屉"
+
+// !学习路由
+import Demo from "./router_demo/Demo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <FuncTs name={"123"}></FuncTs> */}
+      {/* <ClassTs></ClassTs> */}
+      {/* <Todolist></Todolist> */}
+      {/* <Props></Props> */}
+      {/* <App1></App1> */}
+
+      <Demo></Demo>
     </div>
   );
 }
 
 export default App;
+

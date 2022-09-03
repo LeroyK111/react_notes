@@ -7,10 +7,14 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+
+
 root.render(
-  <React.StrictMode>
+  // !默认开启严格模式，开启严格模式，会导致生命周期触发两次
+  // <React.StrictMode>
     <App />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
