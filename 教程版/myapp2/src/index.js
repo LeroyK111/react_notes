@@ -98,7 +98,22 @@ import { createRoot } from "react-dom/client";
 
 
 // !单元测试
-import App from "./单元测试/App"
+// import App from "./单元测试/App"
+
+
+// !redux-saga
+// import App from "./redux-saga/App"
+
+
+// !冷门知识
+// import App from "./冷门知识/portal/App"
+// import App from "./冷门知识/懒加载/App"
+// import App from "./冷门知识/Ref引用传递/App"
+
+// import App from "./冷门知识/Ref引用传递/App2"
+
+import App from "./冷门知识/memo缓存/App"
+
 
 
 

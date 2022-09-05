@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.left,
+.right {
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+}
+
+.left {
+  width: 200px;
+  background-color: pink;
+  position: relative;
+  z-index: 10;
+}
+
+.right {
+  flex: 1;
+  background-color: skyblue;
+  position: relative;
+  z-index: 5;
+}

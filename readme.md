@@ -925,13 +925,19 @@ npm i antd-mobile
 
 ## styled-components
 
+https://github.com/kristerkari/react-native-css-modules
+
+使用其他样式的方法：less，sass等。
+
 CSS组件，模块化。
 
 ```
 npm install --save styled-components
+&表示父一级
+${允许js代码}
 ```
 
-其实就是利用高阶组件的方法，支持sass语法
+其实就是利用高阶组件的方法，支持sass语法。
 
 ![image-20220903165851077](readme.assets/image-20220903165851077.png)
 
@@ -985,39 +991,131 @@ npm install redux-saga
 
 ![image-20220903191754592](readme.assets/image-20220903191754592.png)
 
+为了避免状态异步。我们之前引入了redux-thunk和redux-promise处理异步状态值。
 
+就是一个拦截器中间件。拦截了redux的发布dispatch。
 
+![image-20220905121308017](readme.assets/image-20220905121308017.png)
 
+通过中间件，将action的内容重新改写。放入异步然后转变为同步接收value。
 
+![image-20220905121458073](readme.assets/image-20220905121458073.png)
 
+使用saga这种协程（生成器）方案，也是一种方法。
 
+### 批量监听
 
+![image-20220905125231491](readme.assets/image-20220905125231491.png)
 
+### 接力方法
 
+![image-20220905125848539](readme.assets/image-20220905125848539.png)
 
+新的语法糖。
 
+#### 使用独立
+
+![image-20220905130844608](readme.assets/image-20220905130844608.png)
+
+#### 使用聚合
+
+说白了，就是连独立takeEvery都不要用
+
+![image-20220905130819172](readme.assets/image-20220905130819172.png)
 
 ## React补充
 
+冷门知识。
 
+### portal
 
+dom节点传送门。把dom渲染到root根节点之外。
 
+![image-20220905132353910](readme.assets/image-20220905132353910.png)
+
+解决的痛点
+
+![image-20220905134351966](readme.assets/image-20220905134351966.png)
+
+使用createPortal，将jsx传送到某个节点下。
+
+![image-20220905144038342](readme.assets/image-20220905144038342.png)
+
+阻止事件冒泡
+
+![image-20220905144421452](readme.assets/image-20220905144421452.png)
+
+### 懒加载
+
+组件懒加载。
+
+![image-20220905151232093](readme.assets/image-20220905151232093.png)
+
+路由懒加载。
+
+```
+ npm i react-loadable
+```
+
+![image-20220905151345890](readme.assets/image-20220905151345890.png)
+
+### 引用传递ref
+
+Ref技术，Dom标记。
+
+![image-20220905160412477](readme.assets/image-20220905160412477.png)
+
+### memo缓存
+
+只针对函数式组件的dom更新优化，至于class组件，有PureComponent高阶组件负责。
+
+![image-20220905161736294](readme.assets/image-20220905161736294.png)
 
 
 
 ## GraphQL
 
-数据库查询语法
+RPC**远程过程调用**是一种规范，它允许在不同的上下文中远程执行一个函数。
+
+**SOAP**是一种XML格式的、高度标准化的网络通信协议。
 
 
 
+常用种类。
 
+**REST**是一种由一组架构约束定义的自解释API架构风格，旨在为许多API消费者广泛采用。
 
+- **统一接口**：允许以统一的方式与给定的服务器进行交互，而不考虑设备或应用类型。
 
+- **无状态**：处理请求的必要状态，就像请求本身所包含的那样，服务器不需要存储任何与会话有关的内容。
 
+- **缓存**
 
+- **客户端-服务器架构**：允许任何一方独立进化
 
+- 应用程序的**分层系统**
 
+- 服务器向客户机提供**可执行代码**的能力
+
+  ![img](readme.assets/322a87999a1c42d78e880388af6ee129tplv-k3u1fbpfcp-zoom-in-crop-mark3024000.webp)
+
+**GraphQL**是一种描述如何进行精确数据请求的语法。
+
+![在GraphQL中执行查询](readme.assets/d8a590b830ee4d99a4da2460261ca1catplv-k3u1fbpfcp-zoom-in-crop-mark3024000.webp)
+
+![image-20220905162754250](readme.assets/image-20220905162754250.png)
+
+### 评价：
+
+GraphQL就是一种适合高维大数据的聚合API的规则。
+
+```
+https://graphql.org/learn/
+```
+
+最大进步，就是api接口是自适应的，前端完全可以通过一定的规则，去请求数据。而不需要后端去改动路由和sql。。。
+
+[点我跳转到node-graphql笔记中](../Node_learning/graphql/readme.md#graphql学习)
 
 ## Dva框架
 
