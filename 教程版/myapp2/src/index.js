@@ -112,7 +112,11 @@ import { createRoot } from "react-dom/client";
 
 // import App from "./冷门知识/Ref引用传递/App2"
 
-import App from "./冷门知识/memo缓存/App"
+// import App from "./冷门知识/memo缓存/App"
+
+
+// !使用graphql接口
+import App from "./graphql/App"
 
 
 
