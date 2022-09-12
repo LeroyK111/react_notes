@@ -1,0 +1,8 @@
+{
+  "proxy": {
+    "/ajax": {
+      "target": "https://i.maoyan.com",
+      "changeOrigin": true
+    }
+  }
+}

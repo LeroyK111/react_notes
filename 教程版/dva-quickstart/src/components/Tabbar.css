@@ -1,0 +1,32 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: white;
+  border-top: 1px solid #ccc;
+  background-color: wheat;
+}
+
+
+footer ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer ul li {
+  flex: 1;
+  border-left: 3px solid #000;
+  font-weight: bold;
+  color: brown;
+}
+
+
+.active {
+  color: red;
+}

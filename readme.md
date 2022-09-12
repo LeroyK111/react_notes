@@ -463,7 +463,7 @@ useRef 标记dom
 useImperativeHandle 暴露给父组件dom
 useLayoutEffect	dom加载完毕后，调用
 useDebugValue debug标记，控制台
-useDeferredValue 防抖，节流
+useDeferredValue 防抖，节流, 延时
 useTransition 过度任务，不常用
 useId 组件属性唯一id
 
@@ -1118,24 +1118,62 @@ https://graphql.org/learn/
 [点我跳转到node-graphql笔记中](../Node_learning/graphql/readme.md#graphql学习)
 
 ## Dva框架
+了解即可，已经弃用。
 
+这是一个基于redux，react-router，redux-saga的数据流状态解决方案。
 
+```
+# 有自己的脚手架
+$ npm install dva-cli -g
+$ dva -v
+```
 
+### 目录解构
 
+```
+dva new dva-quickstart
+```
+
+只需要看文件目录，就可以了解到dva脚手架的状态。
+
+![image-20220910035009678](readme.assets/image-20220910035009678.png)
 
 
 
 ## Umi框架
 
+蚂蚁集团对react脚手架的二次开发，框架。
 
+https://umijs.org/docs/tutorials/getting-started
 
+```
+# 会有很多配置项，需要根据需求来选择。
+npx create-umi@latest
+# 这里就是微生成器(构建各种必须插件)
+npm i umi
+# 使用npm启动服务
+npm start
+# 还有一个bug，偶尔要安装这个
+npm install react-sortable-hoc --save
+```
 
+三种安装模式：
 
+![image-20220911231641490](readme.assets/image-20220911231641490.png)
 
+![image-20220911231708997](readme.assets/image-20220911231708997.png)
+
+![image-20220911231738813](readme.assets/image-20220911231738813.png)
+
+### 目录解构
+
+![image-20220913002549006](readme.assets/image-20220913002549006.png)
 
 
 
 ## 新版routerV6
 
-
+```
+npm i react-router-dom@6
+```
 
