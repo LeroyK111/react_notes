@@ -1,0 +1,1 @@
+.active{color:red}.tobbar{display:flex;position:fixed;bottom:0;left:0;width:100%;height:40px;z-index:999;border-top:2px solid #ccc;justify-content:space-between;align-items:center;text-align:center;background-color:#fff}.tobbar li{flex:1}.tobbar li:nth-child(n + 1){border-left:1px solid #ccc}
