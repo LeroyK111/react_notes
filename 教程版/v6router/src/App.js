@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// @ts-nocheck
+import "./App.css";
+import React from "react";
+// 导入路由组件
+import { BrowserRouter, HashRouter } from "react-router-dom";
+
+// 直接引入路由组件
+import Index from "./routers";
+
+// 引入tabbar
+import Tabbar from "./component/Tabbar";
+import IndexBak from "./routers/indexBak";
+
+/*
+! 正常渲染index.html即可避免，不能让后端返回404
+*/
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      {/* Routes高阶组件 */}
+      {/* <Index></Index> */}
+      {/* useRoutes 高阶钩子组件 */}
+      <IndexBak></IndexBak>
+      <Tabbar></Tabbar>
+    </BrowserRouter>
   );
 }
 

@@ -600,6 +600,8 @@ a标签。不适用
 
 ### 子组件增强
 
+withRouter()直接包装子组件，赋予props
+
 ![image-20220825211457078](readme.assets/image-20220825211457078.png)
 
 ### 反向代理
@@ -1177,3 +1179,98 @@ npm install react-sortable-hoc --save
 npm i react-router-dom@6
 ```
 
+![image-20220913010925980](readme.assets/image-20220913010925980.png)
+
+### 对比V5
+
+![image-20220913011455360](readme.assets/image-20220913011455360.png)
+
+
+
+### 用法：
+
+#### router导入App
+
+路由模式:
+
+![image-20220913155648551](readme.assets/image-20220913155648551.png)
+
+#### 设置routers-index根路由
+
+设置主路由
+
+![image-20220913155503308](readme.assets/image-20220913155503308.png)
+
+重定向组件
+
+![image-20220913160329644](readme.assets/image-20220913160329644.png)
+
+新API
+
+![image-20220913160313098](readme.assets/image-20220913160313098.png)
+
+#### 嵌套路由
+
+![image-20220913155944153](readme.assets/image-20220913155944153.png)
+
+#### 编程式跳转
+
+这里我们不再使用<a“>声明式跳转<”/a>
+
+import { NavLink，Link } from 'react-router-dom'
+
+推荐用法
+
+import { useNavigate } from "react-router-dom";
+
+![image-20220913160444794](readme.assets/image-20220913160444794.png)
+
+
+
+#### ★路由容器
+
+![image-20220913160135812](readme.assets/image-20220913160135812.png)
+
+#### 路由传参
+
+![image-20220913163921548](readme.assets/image-20220913163921548.png)
+
+![image-20220913163952959](readme.assets/image-20220913163952959.png)
+
+动态路由
+
+![image-20220913165151359](readme.assets/image-20220913165151359.png)
+
+![image-20220913165201219](readme.assets/image-20220913165201219.png)
+
+![image-20220913165227758](readme.assets/image-20220913165227758.png)
+
+#### 路由拦截
+
+![image-20220913191919295](readme.assets/image-20220913191919295.png)
+
+#### 抽象子组件
+
+不用withRouter，强行赋予props.各种方法.如果是class组件，则还是需要包装一下。
+
+![image-20220913193430772](readme.assets/image-20220913193430772.png)
+
+间接使用class组件,withRouter组件。只需要这么用，将class组件，强行变换成func组件，然后class组件HOC高阶方法即可。
+
+![image-20220913193911607](readme.assets/image-20220913193911607.png)
+
+![image-20220913194418967](readme.assets/image-20220913194418967.png)
+
+#### 路由懒加载
+
+加快启动速度。开启懒加载，则所有组件都会被分割成单独js
+
+![image-20220913204400348](readme.assets/image-20220913204400348.png)
+
+
+
+![image-20220913204350310](readme.assets/image-20220913204350310.png)
+
+#### useRoutes钩子配置
+
+![image-20220913211147467](readme.assets/image-20220913211147467.png)
