@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { Route } from "react-router-dom";
 import Test from "../views/Test";

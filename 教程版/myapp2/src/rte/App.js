@@ -1,14 +1,10 @@
 // @ts-nocheck
 import React from "react";
-import Router from "./router/indexRouter"
-import Tabar from "./components/Tabar"
-import "./css/App.css"
-
+import Router from "./router/indexRouter";
+import Tabar from "./components/Tabar";
+import "./css/App.css";
 
 export default function App() {
-  
-  
-
   return (
     <div>
       <Router>
