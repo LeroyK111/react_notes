@@ -12,7 +12,7 @@
 
 ![image-20220811164957063](readme.assets/image-20220811164957063.png)
 
-### **传统MVC模型：**
+### 传统MVC模型：
 
 M：model模型（数据库的表抽象化成类）
 
@@ -20,7 +20,7 @@ V：view视图（只监听视图的请求）
 
 C：controlled控制器（处理请求，链接MV的逻辑）
 
-### **传统MTV模型：**
+### 传统MTV模型：
 
 M：model模型（数据库的表抽象化成类）。
 
@@ -135,7 +135,7 @@ class组件
 
 ES6的加入让JavaScript直接支持使用class类定义一个类，react创建组件的方式就是使用类的继承，ES6 class时目前官方推荐的使用方式，它使用了ES6标准语法来构建。
 
-## ★组件**Component**s
+## ★组件Components
 
 ### class组件
 
@@ -157,9 +157,10 @@ ES6的加入让JavaScript直接支持使用class类定义一个类，react创建
 
 ![image-20220809153135975](readme.assets/image-20220809153135975.png)
 
-### 事件操作![image-20220809231911572](readme.assets/image-20220809231911572.png)
-
-### ![image-20220809231707951](readme.assets/image-20220809231707951.png)
+### 事件操作
+![image-20220809231911572](readme.assets/image-20220809231911572.png)
+ 
+![image-20220809231707951](readme.assets/image-20220809231707951.png)
 
 ![image-20220809234315886](readme.assets/image-20220809234315886.png)
 
@@ -175,7 +176,8 @@ ES6的加入让JavaScript直接支持使用class类定义一个类，react创建
 
 ### 组件的数据挂载
 
-#### 状态state![image-20220810154243196](readme.assets/image-20220810154243196.png)
+#### 状态state
+![image-20220810154243196](readme.assets/image-20220810154243196.png)
 
 说白了就是无限滚动，不断比较滚轮距离和视口大小，利用数据代理替换已渲染的数据。
 
@@ -424,7 +426,7 @@ componentWillUnmount() 监听组件的销毁，手动关闭事件和定时器
 
 ![image-20220819203930845](readme.assets/image-20220819203930845.png)
 
-### **新生命周期钩子**
+### 新生命周期钩子
 
 static getDerivedStateFromProps(*props*, *state*)  初始化，dom渲染，update更新，被父组件触发。
 
@@ -856,8 +858,7 @@ npm i mobx-react
 利用状态树，传递store状态。然后监听observer包裹的组件。
 
 类组件，需要包裹一下
-
-### ![image-20220830114504396](readme.assets/image-20220830114504396.png)
+![image-20220830114504396](readme.assets/image-20220830114504396.png)
 
 函数式组件，则不需要。
 
@@ -910,20 +911,6 @@ npm i antd-mobile
 ```
 
 ![image-20220903153606879](readme.assets/image-20220903153606879.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## styled-components
 
