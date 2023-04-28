@@ -5,7 +5,7 @@ import React from "react";
 import { BrowserRouter, HashRouter } from "react-router-dom";
 
 // 直接引入路由组件
-import Index from "./routers";
+// import Index from "./routers";
 
 // 引入tabbar
 import Tabbar from "./component/Tabbar";
