@@ -1,10 +1,12 @@
 import { useState } from "react";
 import "./App.css";
+import UserProfile from "./components/demo";
 
 function App() {
-  const [count, setCount] = useState(0);
 
-  return <div>1</div>;
+  return <div>
+    <UserProfile></UserProfile>
+  </div>;
 }
 
 export default App;

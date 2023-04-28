@@ -6,8 +6,8 @@
 
 
 export default async function fetchData() {
-  const response = fetch(
-    "https://jsonplaceholder.typicode.com/users/1"
+  const response = await fetch(
+    "http://127.0.0.1:3333/api"
   ).then((res) => {
     if (res.ok) return res.json();
     return Promise.reject(res);

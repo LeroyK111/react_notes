@@ -8,6 +8,8 @@ import useUserData from "../hooks/serviceLogic";
 
 const UserProfile = () => {
   const [userData] = useUserData();
+
+
   return (
     <div>
       {userData.id ? (
