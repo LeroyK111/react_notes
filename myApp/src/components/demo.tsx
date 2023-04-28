@@ -9,10 +9,9 @@ import useUserData from "../hooks/serviceLogic";
 const UserProfile = () => {
   const [userData] = useUserData();
 
-
   return (
     <div>
-      {userData.id ? (
+      {userData?.id ? (
         <div>
           <ul> {userData.name} </ul>
           <ul> {userData.email} </ul>

@@ -6,17 +6,17 @@
 import { useEffect, useState } from "react";
 import fetchData from "./fetchData";
 
-const useUserData = (): any => {
+
+
+
+const useUserData = () => {
   const [userData, setUserData] = useState();
 
-  
-
-  useEffect(()=>{
-    fetchData()
-    .then((data) => setUserData(data))
-    .catch((res) => console.error(res.status));
-  }, [])
-
+  useEffect(() => {
+    fetchData().then((data) => {
+      setUserData(data);
+    });
+  }, []);
 
   return [userData];
 };
