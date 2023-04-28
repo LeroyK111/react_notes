@@ -48,7 +48,11 @@
             "state": {
               "type": "search",
               "state": {
+<<<<<<< HEAD
                 "query": "tag:#with",
+=======
+                "query": "",
+>>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +69,12 @@
               "state": {}
             }
           }
+<<<<<<< HEAD
         ],
         "currentTab": 1
+=======
+        ]
+>>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
       }
     ],
     "direction": "horizontal",
@@ -131,7 +139,11 @@
             }
           }
         ],
+<<<<<<< HEAD
         "currentTab": 2
+=======
+        "currentTab": 3
+>>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
       }
     ],
     "direction": "horizontal",
@@ -147,6 +159,7 @@
       "command-palette:打开命令面板": false
     }
   },
+<<<<<<< HEAD
   "active": "61b7d2bf6bb7e512",
   "lastOpenFiles": [
     "myApp/src/components/demo.tsx",
@@ -187,5 +200,10 @@
     "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/prefer-string-starts-ends-with.md",
     "myApp/src/assets/react.svg",
     "myApp/public/vite.svg"
+=======
+  "active": "54ff52ea622a53ca",
+  "lastOpenFiles": [
+    "readme.md"
+>>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
   ]
 }
