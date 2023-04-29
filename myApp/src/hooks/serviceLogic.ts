@@ -6,11 +6,12 @@
 import { useEffect, useState } from "react";
 import fetchData from "./fetchData";
 
-
-
-
 const useUserData = () => {
-  const [userData, setUserData] = useState();
+  const [userData, setUserData] = useState<{
+    id: number | null;
+    name: string;
+    email: string;
+  }>({ id: null, name: "", email: "" });
 
   useEffect(() => {
     fetchData().then((data) => {
@@ -18,7 +19,7 @@ const useUserData = () => {
     });
   }, []);
 
-  return [userData];
+  return { userData };
 };
 
 export default useUserData;
