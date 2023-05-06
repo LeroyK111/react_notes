@@ -48,7 +48,11 @@
             "state": {
               "type": "search",
               "state": {
+<<<<<<< HEAD
+                "query": "tag:#with",
+=======
                 "query": "",
+>>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +69,12 @@
               "state": {}
             }
           }
+<<<<<<< HEAD
+        ],
+        "currentTab": 1
+=======
         ]
+>>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
       }
     ],
     "direction": "horizontal",
@@ -130,7 +139,11 @@
             }
           }
         ],
+<<<<<<< HEAD
+        "currentTab": 2
+=======
         "currentTab": 3
+>>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
       }
     ],
     "direction": "horizontal",
@@ -146,8 +159,51 @@
       "command-palette:打开命令面板": false
     }
   },
+<<<<<<< HEAD
+  "active": "61b7d2bf6bb7e512",
+  "lastOpenFiles": [
+    "myApp/src/components/demo.tsx",
+    "myApp/src/components/demo.ts",
+    "myApp/src/hooks/serviceLogic.ts",
+    "myApp/src/hooks/fetchData.ts",
+    "myApp/node_modules/zustand/umd/middleware/immer.production.js",
+    "myApp/node_modules/zustand/umd/middleware/immer.development.js",
+    "myApp/node_modules/zustand/umd/vanilla.production.js",
+    "myApp/node_modules/zustand/umd/shallow.production.js",
+    "myApp/node_modules/zustand/umd/vanilla.development.js",
+    "myApp/node_modules/zustand/umd/shallow.development.js",
+    "myApp/node_modules/zustand/umd/middleware.development.js",
+    "myApp/node_modules/typescript/lib/README.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/unified-signatures.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/unbound-method.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/typedef.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/sort-type-union-intersection-members.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/type-annotation-spacing.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/triple-slash-reference.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/TEMPLATE.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/strict-boolean-expressions.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/switch-exhaustiveness-check.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-before-function-paren.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-infix-ops.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/sort-type-constituents.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-before-blocks.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/semi.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/return-await.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/restrict-template-expressions.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/restrict-plus-operands.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/require-array-sort-compare.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/require-await.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/README.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/quotes.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/promise-function-async.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/prefer-ts-expect-error.md",
+    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/prefer-string-starts-ends-with.md",
+    "myApp/src/assets/react.svg",
+    "myApp/public/vite.svg"
+=======
   "active": "54ff52ea622a53ca",
   "lastOpenFiles": [
     "readme.md"
+>>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
   ]
 }
