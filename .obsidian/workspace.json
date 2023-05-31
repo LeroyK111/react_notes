@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "97570037a78f2006",
+    "id": "58348338be8e1a9f",
     "type": "split",
     "children": [
       {
-        "id": "e920585a6c824bdf",
+        "id": "6ae3dd481814bded",
         "type": "tabs",
         "children": [
           {
-            "id": "c5811baab756d37b",
+            "id": "29cbd84ce4c8aada",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "readme.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7f922cb5a1c3022f",
+    "id": "c0a7a14e1da3a2dc",
     "type": "split",
     "children": [
       {
-        "id": "134f8008e65ca6ee",
+        "id": "fdd17271653596eb",
         "type": "tabs",
         "children": [
           {
-            "id": "6942d00ae8154a71",
+            "id": "739195e2f95fa4e5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,16 +39,12 @@
             }
           },
           {
-            "id": "61b7d2bf6bb7e512",
+            "id": "0fd50a1e2fab9a70",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-<<<<<<< HEAD
-                "query": "tag:#with",
-=======
                 "query": "",
->>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,39 +54,33 @@
             }
           },
           {
-            "id": "67380c63e82d94f2",
+            "id": "1f44bc8a5ea1a172",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
           }
-<<<<<<< HEAD
-        ],
-        "currentTab": 1
-=======
         ]
->>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
-    "id": "3abdc649d0cd522b",
+    "id": "a5791096868f339c",
     "type": "split",
     "children": [
       {
-        "id": "931742e093663967",
+        "id": "3b2cad5a0ef0461c",
         "type": "tabs",
         "children": [
           {
-            "id": "14c664ad731585ed",
+            "id": "411fa1d6fff8880b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,19 +92,18 @@
             }
           },
           {
-            "id": "50d3aa3ec96db61c",
+            "id": "8dce51e0478205a3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "39bfe0644c4d9419",
+            "id": "b24d0647e93c1d4d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -129,25 +114,19 @@
             }
           },
           {
-            "id": "54ff52ea622a53ca",
+            "id": "baf336397c470f4e",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "readme.md"
-              }
+              "state": {}
             }
           }
-        ],
-<<<<<<< HEAD
-        "currentTab": 2
-=======
-        "currentTab": 3
->>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,51 +138,6 @@
       "command-palette:打开命令面板": false
     }
   },
-<<<<<<< HEAD
-  "active": "61b7d2bf6bb7e512",
-  "lastOpenFiles": [
-    "myApp/src/components/demo.tsx",
-    "myApp/src/components/demo.ts",
-    "myApp/src/hooks/serviceLogic.ts",
-    "myApp/src/hooks/fetchData.ts",
-    "myApp/node_modules/zustand/umd/middleware/immer.production.js",
-    "myApp/node_modules/zustand/umd/middleware/immer.development.js",
-    "myApp/node_modules/zustand/umd/vanilla.production.js",
-    "myApp/node_modules/zustand/umd/shallow.production.js",
-    "myApp/node_modules/zustand/umd/vanilla.development.js",
-    "myApp/node_modules/zustand/umd/shallow.development.js",
-    "myApp/node_modules/zustand/umd/middleware.development.js",
-    "myApp/node_modules/typescript/lib/README.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/unified-signatures.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/unbound-method.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/typedef.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/sort-type-union-intersection-members.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/type-annotation-spacing.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/triple-slash-reference.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/TEMPLATE.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/strict-boolean-expressions.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/switch-exhaustiveness-check.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-before-function-paren.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-infix-ops.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/sort-type-constituents.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-before-blocks.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/semi.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/return-await.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/restrict-template-expressions.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/restrict-plus-operands.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/require-array-sort-compare.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/require-await.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/README.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/quotes.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/promise-function-async.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/prefer-ts-expect-error.md",
-    "myApp/node_modules/@typescript-eslint/eslint-plugin/docs/rules/prefer-string-starts-ends-with.md",
-    "myApp/src/assets/react.svg",
-    "myApp/public/vite.svg"
-=======
-  "active": "54ff52ea622a53ca",
-  "lastOpenFiles": [
-    "readme.md"
->>>>>>> 4e5f574db6364d8432f687d8db4a0e5ab000e873
-  ]
+  "active": "739195e2f95fa4e5",
+  "lastOpenFiles": []
 }
