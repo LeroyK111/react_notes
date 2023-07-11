@@ -9,4 +9,4 @@
 *.mp3
 *.rar
 node_modules/
-/umiapp/
+*/umiapp/
