@@ -1277,3 +1277,63 @@ import { useNavigate } from "react-router-dom";
 -   **缺乏测试**——每一层都应该进行彻底的测试，以确保它按预期工作。未能测试每一层可能会导致最终应用程序中出现错误和其他问题。
     
 -   **缺乏凝聚力**——每一层都具有高度的凝聚力。内聚性是指一个层内的功能和职责的相关程度。低内聚性会导致代码难以理解和维护。
+
+## 小技巧
+
+### 严格模式
+```js
+'use strict';
+```
+'use client'声明是RSC（React Server Component，服务端组件）协议中的定义。
+
+启用了RSC的React应用，所有组件默认在服务端渲染（可以通过Next v13体验），只有声明'use client'的组件文件，会在前端渲染。
+
+### using关键字
+using关键字是tc39提案ECMAScript Explicit Resource Management[1]提出的，用于为各种资源（内存、I/O等）提供统一的生命周期管理（何时分配、何时释放等）。
+
+```js
+{
+  const getResource = () => {
+    return {
+      [Symbol.dispose]: () => {
+        console.log('离开啦!')
+      }
+    }
+  }
+  using resource = getResource();
+}
+// 代码执行到这里会打印 离开啦!
+```
+
+### use方法
+React v18.3之后发布的新原生hook —— use：
+```js
+using data = use(ctx);
+```
+
+这个hook可以接收两种类型数据：
+
+React Context
+此时use的作用与useContext一样。
+
+promise
+此时如果这个promise处于pending状态，则最近一个祖先<Suspense/>组件可以渲染fallback。
+
+比如，在如下代码中，如果<Cpn />组件或其子孙组件使用了use，且promise处于pending状态（比如请求后端资源）：
+```jsx
+function App() {
+  return (
+    <div>
+      <Suspense fallback={<div>loading...</div>}>
+        <Cpn />
+      </Suspense>
+    </div>
+  );
+}
+```
+
+那么，页面会渲染如下结果：
+<div>
+  <div>loading...</div>
+</div>
+当请求成功后，会渲染<Cpn />。

@@ -21,7 +21,12 @@ function App() {
   return (
     <div>
       <div>{bears}</div>
-      <button className="button" onClick={()=>{increasePopulation(), increasePopulation()}}>
+      <button
+        className="button"
+        onClick={() => {
+          increasePopulation(), increasePopulation();
+        }}
+      >
         Button test{" "}
       </button>
       <UserProfile></UserProfile>
