@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 干掉大于50mb文件，二进制缓存
 *.mdb
 /__pycache__/
@@ -10,3 +11,17 @@
 *.rar
 node_modules/
 umiapp
+=======
+# 干掉大于50mb文件，二进制缓存
+*.mdb
+/__pycache__/
+*.mp4
+*.pkg
+*.exe
+*.zip
+*.7z
+*.mp3
+*.rar
+node_modules/
+umiapp
+>>>>>>> ab28298f88562d163f636fd245cbc5b0959de166
