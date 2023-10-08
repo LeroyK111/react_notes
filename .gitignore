@@ -11,9 +11,6 @@
 *.rar
 node_modules/
 umiapp
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 # 干掉大于50mb文件，二进制缓存
 *.mdb
 /__pycache__/
@@ -26,9 +23,7 @@ umiapp
 *.rar
 node_modules/
 umiapp
-=======
-=======
->>>>>>> 51a6bf5a21c06e3bbcb6740bec61c4b9104d1734
+
 # 干掉大于50mb文件，二进制缓存
 *.mdb
 /__pycache__/
@@ -41,9 +36,6 @@ umiapp
 *.rar
 node_modules/
 umiapp
-<<<<<<< HEAD
-=======
-=======
 # 干掉大于50mb文件，二进制缓存
 *.mdb
 /__pycache__/
@@ -56,6 +48,3 @@ umiapp
 *.rar
 node_modules/
 umiapp
->>>>>>> 51a6bf5a21c06e3bbcb6740bec61c4b9104d1734
->>>>>>> 9cb1d9e62ba4237a20c2dae474b9f04823ac9955
->>>>>>> ab28298f88562d163f636fd245cbc5b0959de166
