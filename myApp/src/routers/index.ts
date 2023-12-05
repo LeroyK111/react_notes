@@ -1,10 +1,7 @@
-import {
-  Router,
-  Route,
-  RootRoute,
-} from "@tanstack/router";
+import { Router, Route, RootRoute } from "@tanstack/router";
 import home from "../page/home";
 import App from "../App";
+import test from "../components/test";
 
 const rootRoute = new RootRoute({
   // 导入根组件app
@@ -18,18 +15,18 @@ const indexRoute = new Route({
   component: home,
 });
 
+// 测试条件渲染
+const testRoute = new Route({
+  getParentRoute: () => rootRoute,
+  path: "/test",
+  component: test,
+});
 
 // 创建路由树
-const routeTree = rootRoute.addChildren([indexRoute])
-
+const routeTree = rootRoute.addChildren([indexRoute, testRoute]);
 
 // 路由对象
-const router = new Router({ routeTree })
-
+const router = new Router({ routeTree });
 
 // 导出对象
-export default router
-
-
-
-
+export default router;
