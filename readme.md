@@ -138,10 +138,12 @@ ES6的加入让JavaScript直接支持使用class类定义一个类，react创建
 ## ★组件Components
 
 ### class组件
+快捷键：rcc
 
 ![image-20220809135947403](readme.assets/image-20220809135947403.png)
 
 ### func组件
+快捷键：rfc
 
 ![image-20220809135932784](readme.assets/image-20220809135932784.png)
 
@@ -150,6 +152,7 @@ ES6的加入让JavaScript直接支持使用class类定义一个类，react创建
 ![image-20220809144833058](readme.assets/image-20220809144833058.png)
 
 ### 模板语法
+{}
 
 ![image-20220809144814860](readme.assets/image-20220809144814860.png)
 
@@ -158,6 +161,7 @@ ES6的加入让JavaScript直接支持使用class类定义一个类，react创建
 ![image-20220809153135975](readme.assets/image-20220809153135975.png)
 
 ### 事件操作
+
 ![image-20220809231911572](readme.assets/image-20220809231911572.png)
  
 ![image-20220809231707951](readme.assets/image-20220809231707951.png)

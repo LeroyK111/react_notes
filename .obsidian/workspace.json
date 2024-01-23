@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a5791096868f339c",
@@ -142,7 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -154,6 +155,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "baf336397c470f4e",
-  "lastOpenFiles": []
+  "active": "29cbd84ce4c8aada",
+  "lastOpenFiles": [
+    "umiapp/typings.d.ts",
+    "umiapp/tsconfig.json",
+    "umiapp/src/layouts/index.tsx",
+    "umiapp/src/pages/index.tsx",
+    "umiapp/src/pages/docs.tsx",
+    "umiapp/src/layouts/index.less",
+    "umiapp/src/assets/yay.jpg",
+    "umiapp/src/pages",
+    "umiapp/src/layouts",
+    "umiapp/src/assets",
+    "umiapp/src",
+    "umiapp/package.json",
+    "src/assets/yay.jpg",
+    "tqTui/node_modules/postcss-value-parser/README.md"
+  ]
 }
