@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Component } from "react";
 
 // 引入子组件
@@ -6,12 +7,6 @@ import Cinema from "./TabControl/Cinema";
 import Center from "./TabControl/Center";
 
 import "./css/tabControl.css";
-
-
-
-
-
-
 
 export default class TabControl extends Component {
   state = {

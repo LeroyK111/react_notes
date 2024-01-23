@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export default class Child extends Component {
   render() {
+    console.log(this.props.children);
     return (
       <div>
         {/* 不像vue中slot方法，直接括号包裹即可 */}

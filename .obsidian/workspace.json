@@ -157,6 +157,11 @@
   },
   "active": "29cbd84ce4c8aada",
   "lastOpenFiles": [
+    "readme.assets/image-20220825143322957.png",
+    "readme.md",
+    "readme.assets/image-20220809234315886.png",
+    "readme.assets/image-20220809231911572.png",
+    "教程版/myapp/node_modules/fsevents",
     "umiapp/typings.d.ts",
     "umiapp/tsconfig.json",
     "umiapp/src/layouts/index.tsx",
@@ -167,8 +172,6 @@
     "umiapp/src/pages",
     "umiapp/src/layouts",
     "umiapp/src/assets",
-    "umiapp/src",
-    "umiapp/package.json",
     "src/assets/yay.jpg",
     "tqTui/node_modules/postcss-value-parser/README.md"
   ]

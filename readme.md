@@ -163,7 +163,8 @@ ES6的加入让JavaScript直接支持使用class类定义一个类，react创建
 ### 事件操作
 
 ![image-20220809231911572](readme.assets/image-20220809231911572.png)
- 
+
+
 ![image-20220809231707951](readme.assets/image-20220809231707951.png)
 
 ![image-20220809234315886](readme.assets/image-20220809234315886.png)
@@ -348,20 +349,20 @@ react的Ref是对象标记，可以获取DOM元素or组件对象，实现数据�
 ## 生命周期
 
 ```
-组件挂载
-constructor()
-static getDerivedStateFromProps() # 静态内部方法
-render()
-componentDidMount()
+组件挂载: 
+constructor() 第一
+static getDerivedStateFromProps() # 静态内部方法 第二
+render() 第三
+componentDidMount() 第四，挂在dom结束后
 ```
 
 ```
 组件的state和props更新时
-static getDerivedStateFromProps() # 静态内部方法
-shouldComponentUpdate() # 控制dom是否渲染，性能优化的方法
-render()
-getSnapshotBeforeUpdate()
-componentDidUpdate()
+static getDerivedStateFromProps() # 静态内部方法  第一
+shouldComponentUpdate() # 控制dom是否渲染，性能优化的方法 第二
+render() 第三
+getSnapshotBeforeUpdate() 第四
+componentDidUpdate() 第五
 ```
 
 ```
@@ -530,9 +531,6 @@ useRef() 一般拿来标记dom，偶尔情况下可以存储临时变量
 ![image-20220823220548619](readme.assets/image-20220823220548619.png)
 
 这就是对函数式组件的逻辑，方法，事件，状态的全部复用.
-
-
-
 
 
 ## 路由route

@@ -18,6 +18,8 @@ export default class Navbar extends Component {
     title1: "我是默认值",
   };
 
+  
+
   render() {
     // 这里可以直接接收到参数props
     // console.log(this.props);

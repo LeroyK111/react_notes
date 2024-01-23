@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Component } from "react";
 
 class Filed extends Component {
@@ -18,6 +19,7 @@ class Filed extends Component {
         <label>
           {this.props.label}:
           <input
+            
             value={this.state.value}
             type={this.props.type}
             onChange={(e) => {

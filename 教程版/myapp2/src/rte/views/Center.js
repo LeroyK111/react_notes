@@ -6,6 +6,7 @@ import Test from "../views/Test";
 
 
 export default function Center(props) {
+  console.log(props);
   return (
     <div>
       <h1>测试Center</h1>

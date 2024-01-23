@@ -1,18 +1,27 @@
 
 import React, { Component } from "react";
 
+
+
 export default class Event1 extends Component {
   a = "测试this";
+  
+  
+
+
   render() {
     return (
       <div>
         {/* 单标签也得写成双标签闭合or自闭和标签 */}
         <input type="text" id="input"></input>
+        
         <button
+        
           onClick={(e) => {
             alert("我被点击了");
             console.log(e.target);
           }}
+          
         >
           add1
         </button>
@@ -43,6 +52,7 @@ export default class Event1 extends Component {
   }
   // 第三种事件写法
   handClickEvent2 = (e) => {
+    // 利用冒泡原理，实现事件代理
     console.log("第三种绑定事件的方法");
     console.log(e);
   };

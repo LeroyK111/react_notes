@@ -42,10 +42,10 @@ export default class App extends Component {
 
 
     // !这里获取不到数据，因为这里是同步了
-    console.log(this.state.list);
+    console.log('同步', this.state.list);
     setTimeout(() => {
       // !通过setTimeout 则可以获取到数据，这里又异步了
-      console.log(this.state.list);
+      console.log('异步', this.state.list);
     }, 0);
   }
 }

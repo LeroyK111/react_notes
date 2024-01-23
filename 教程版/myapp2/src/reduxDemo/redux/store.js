@@ -1,3 +1,4 @@
+// @ts-nocheck
 /*
 ! 全局管理中间件redux
 */

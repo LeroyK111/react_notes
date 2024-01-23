@@ -12,11 +12,9 @@ export default function Cinemas(props) {
       // 去请求数据
       store.dispatch(
         // 这里actionCreator里写异步请求
-        // getCinemaListAction()
         getCinemaListAction2()
       );
     }
-
     // 重复订阅多次
     const unsubscribe = store.subscribe(()=>{
       setsecond(store.getState().CinemaReducer.list)

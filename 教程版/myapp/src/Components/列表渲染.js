@@ -11,7 +11,6 @@ export default class ChangeList extends Component {
     // 一般key值我们都用唯一值设置，避免出现重复值。
     var newList = this.state.list1.map((x, index)=><li key={index}>{x}</li>)
 
-
     return <div>
       {/* 列表循环 */}
       <ul className="changeList">

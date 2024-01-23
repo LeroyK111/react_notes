@@ -51,10 +51,10 @@ root.render(<App tab="home" />);
 */
 // import App4 from "./Components/ref";
 // ReactDOM.render(
-// 模板标签还有严格模式：
-// <React.StrictMode>
+//   // 模板标签还有严格模式：
+//   <React.StrictMode>
 //     <App4></App4>,
-// </React.StrictMode>,
+//   </React.StrictMode>,
 //   document.querySelector("#root2")
 // );
 
@@ -78,42 +78,30 @@ import { createRoot } from "react-dom/client";
 // import TabControl from "./Components/选项卡";
 // *测试同步和异步
 // import AddTest from "./Components/setData同步异步";
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+
 // root.render(<AddTest></AddTest>)
 // root.render(<TabControl></TabControl>);
 
 // * 测试插件
-// import App from "./Components/更好的滚动"
-// root.render(<App></App>)
+// import App from "./Components/更好的滚动";
+// root.render(<App></App>);
 
 // *props标签传递数据
-// import Prop from "./Components/props属性"
-// root.render(<Prop></Prop>)
+// import Prop from "./Components/props属性";
+// root.render(<Prop></Prop>);
 
 // *类组件和函数式组件
 // import App from "./Components/props函数式组件"
 // root.render(<App></App>)
 
-
-
 // *受控组件和非受控组件
 // import App from "./Components/受控"
 // root.render(<App></App>)
 
-
 import Cinema from "./Components/受控案例"
 
-
-
 // *我们使用最新react18的写法
-const container = document.getElementById("root");
-const root = createRoot(container);
-
-
 root.render(<Cinema></Cinema>)
-
-
-
-
-
-
-

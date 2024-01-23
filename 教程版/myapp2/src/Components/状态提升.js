@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Component } from "react";
 
 class Son1 extends Component {
@@ -47,6 +48,7 @@ export default class App extends Component {
     return (
       <div>
         <Son1
+        Son1
           value={this.state.a}
           msg={this.state.msg}
           myEvent={(data) => {

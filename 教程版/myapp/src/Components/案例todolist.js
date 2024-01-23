@@ -53,7 +53,6 @@ export default class Todolist extends Component {
         {this.state.list.length <= 0? <div>暂无代办事件</div> :null}
         {/* 短路运算符 */}
         {this.state.list.length <=0 && <div>暂无代办事件</div>}
-
         {/* 使用样式控制 */}
         <div className={this.state.list.length <= 0? '':"hidden"}>使用样式控制</div>
       </div>
@@ -66,6 +65,7 @@ export default class Todolist extends Component {
     if (this.myref.current.value.trim() !== "") {
       this.state.list.push(this.myref.current.value);
     }
+    // 单向数据流
     this.setState({
       list: this.state.list,
     });

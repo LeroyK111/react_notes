@@ -15,6 +15,7 @@ export default function App() {
       <p>{mycount.current}</p>
       <button
         onClick={() => {
+          // 这里就是非受控组件
           console.log(first.current.value);
         }}
       >
@@ -25,7 +26,7 @@ export default function App() {
           // 如果不重新渲染dom ，mycount.current虽然会发生变化。
           // setvalue(1);
 
-          // 临时变量。。。
+          // 临时变量。。。并不会改变
           mycount = mycount.current + 1;
           console.log(mycount.current);
         }}

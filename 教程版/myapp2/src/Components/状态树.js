@@ -1,11 +1,9 @@
 // @ts-nocheck
-import React, { Component } from "react";
+import React, { Component, createContext } from "react";
 import Test from "./状态树/Test";
 
 // 给个默认值null，这个值是当生产者value为空时，默认传递的值
-const GlobalContext = React.createContext(null);
-
-
+const GlobalContext = createContext(null);
 
 // class Test extends Component {
 //   render() {

@@ -20,16 +20,18 @@ export default function App() {
       }}
     >
       <h1>{info}</h1>
-      <Child></Child>
+      <Child GlobalContext={GlobalContext}></Child>
     </GlobalContext.Provider>
   );
 }
 
-function Child(params) {
+function Child({GlobalContext}) {
   // 这里必须传入GlobalContext的对象才行
+  // console.log(GlobalContext);
   const context = useContext(GlobalContext);
   // 就是传递过来的value
-  console.log(context);
+  // console.log(context);
+
   return <div>
     <h2>{context.info}</h2>
 

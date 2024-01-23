@@ -11,16 +11,16 @@ export default function App() {
 
   // 这里只被执行了一次
   useEffect(() => {
-    axios.get("/text.json").then(res=>{
+    axios.get("/text.json").then((res) => {
       console.log(res);
-      setfirst(res.data.data.list)
-    })
+      setfirst(res.data.data.list);
+    });
 
-    
     // return () => {
     //   second;
     // }
   }, []);
+  
 
   return (
     <div>

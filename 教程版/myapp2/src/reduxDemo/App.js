@@ -8,6 +8,10 @@ import store from "./redux/store";
 export default function App() {
   const [first, setfirst] = useState(store.getState().TabbarReducer.show)
 
+  // 查看
+  // console.log(store.getState().TabbarReducer.show);
+  
+
   useEffect(() => {
     store.subscribe(() => {
       // 访问最新状态

@@ -43,7 +43,7 @@ export default class State extends Component {
   changeBtn(e) {
     // *可以直接监听状态， 但是限于表层
     if (this.state.text === "取消收藏") {
-
+      // 变换状态
       this.setState({ text: "收藏" });
       alert("取消收藏");
     } else {

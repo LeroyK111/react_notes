@@ -22,7 +22,8 @@
     "rules": {
       "no-undef": "off",
       "no-restricted-globals": "off",
-      "no-unused-vars": "off"
+      "no-unused-vars": "off",
+      "import/first": "off"
     },
     "extends": [
       "react-app",

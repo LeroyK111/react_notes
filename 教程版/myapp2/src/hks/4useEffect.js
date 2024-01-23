@@ -28,7 +28,6 @@ export default function App(props) {
 
   useLayoutEffect(() => {
     console.log("避免页面抖动");
-  
     return () => {
       console.log("测试");
     };

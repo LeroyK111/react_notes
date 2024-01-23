@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Component } from "react";
 
 // 调用bus组件
@@ -18,7 +19,7 @@ export default class App extends Component {
 }
 
 /*
-!核心原理
+!核心原理 监听器开发
 */
 // var bus = {
 //   taskList: [],

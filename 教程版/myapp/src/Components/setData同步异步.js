@@ -41,8 +41,9 @@ export default class AddTest extends Component {
       this.setState({
         count: this.state.count + 1,
       }, ()=>{
+        // 回调中无传参
         console.log(
-          "这里就可以再次回调"
+          `这里就可以再次回调${this.state.count}`
         );
       });
 

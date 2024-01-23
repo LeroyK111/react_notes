@@ -19,7 +19,6 @@ var bus = {
     });
     // 每当我触发完成，我就删除最后一个task
     this.taskList.pop()
-    
     return this.result
   },
 };

@@ -14,8 +14,7 @@ export default class Cinema extends Component {
       mytext: "",
     };
 
-    // 没有学习生命周期，所以我们直接在状态中请求数据
-
+    // 没有学习生命周期，所以我们直接在状态中请求数据, 直接异步
     axios
       .get(
         "https://m.maizuo.com/gateway?cityId=110100&pageNum=1&pageSize=50&type=1&k=2487985",
@@ -44,6 +43,7 @@ export default class Cinema extends Component {
     return (
       <div className="CinemaText">
         <input
+          // 受控输入
           type="text"
           value={this.state.mytext}
           onChange={(e) => {
@@ -65,7 +65,7 @@ export default class Cinema extends Component {
   }
 
   getCinemaList() {
-    // 受控后，数据对象的复用更好用了
+    // 受控后，数据对象的复用更好用了，过滤器
     return this.state.cinemaList.filter(
       (item) =>
         item.name.includes(this.state.mytext) ||
