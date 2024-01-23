@@ -1337,3 +1337,8 @@ function App() {
   <div>loading...</div>
 </div>
 当请求成功后，会渲染<Cpn />。
+
+
+# React [18.2.0](https://github.com/facebook/react/releases/tag/v18.2.0)
+
+重开一个新项目，重新学习api
