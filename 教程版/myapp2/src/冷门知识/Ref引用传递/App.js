@@ -13,8 +13,6 @@ export default function App() {
           // console.log(element1);
           element1.current.focus();
           element1.current.value = "";
-
-          
           // console.log(ss.current.innerHTML);
         }}
       >

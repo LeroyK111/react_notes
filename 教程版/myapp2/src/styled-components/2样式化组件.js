@@ -23,7 +23,6 @@ export default function App() {
     <div>
       <StyleButton></StyleButton>
       <StyleButton2></StyleButton2>
-
       <StyleChild></StyleChild>
     </div>
   );

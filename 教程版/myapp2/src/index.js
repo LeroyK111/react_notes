@@ -42,7 +42,7 @@ import { createRoot } from "react-dom/client";
 // import App from "./reduxDemo/App"
 
 // !使用react-redux进行高级全局状态管理
-import App from "./redux_abv/App";
+// import App from "./redux_abv/App";
 // import { Provider } from "react-redux";
 // redux持久化
 // import { store, persistor } from "./redux_abv/redux/store";
@@ -103,12 +103,15 @@ import App from "./redux_abv/App";
 // import App from "./redux-saga/App"
 
 // !冷门知识
+// dom传送api createPortal
 // import App from "./冷门知识/portal/App"
+// React.lazy() 动态载入组件
 // import App from "./冷门知识/懒加载/App"
+// 正规引用
 // import App from "./冷门知识/Ref引用传递/App"
-
+// 利用特殊api forwardRef
 // import App from "./冷门知识/Ref引用传递/App2"
-
+// memo 函数式组件专用优化dom
 // import App from "./冷门知识/memo缓存/App"
 
 // !使用graphql接口
@@ -116,7 +119,7 @@ import App from "./redux_abv/App";
 
 // !Components 用法
 // import App from "./Components/状态树";
-// import App from "./Components/插槽slot";
+import App from "./Components/插槽slot";
 
 const container = document.getElementById("root");
 const root = createRoot(container);

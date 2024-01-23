@@ -1174,8 +1174,6 @@ npm i react-router-dom@6
 
 ![image-20220913011455360](readme.assets/image-20220913011455360.png)
 
-
-
 ### 用法：
 
 #### router导入App
@@ -1290,7 +1288,7 @@ import { useNavigate } from "react-router-dom";
 
 启用了RSC的React应用，所有组件默认在服务端渲染（可以通过Next v13体验），只有声明'use client'的组件文件，会在前端渲染。
 
-### using关键字
+### using 关键字
 using关键字是tc39提案ECMAScript Explicit Resource Management[1]提出的，用于为各种资源（内存、I/O等）提供统一的生命周期管理（何时分配、何时释放等）。
 
 ```js
@@ -1307,7 +1305,7 @@ using关键字是tc39提案ECMAScript Explicit Resource Management[1]提出的�
 // 代码执行到这里会打印 离开啦!
 ```
 
-### use方法
+### use 方法
 React v18.3之后发布的新原生hook —— use：
 ```js
 using data = use(ctx);

@@ -11,6 +11,8 @@ const styled = {
   background: "rgba(0,0,0,.7)",
   zIndex: 9999,
 };
+
+
 export default class Dialog extends Component {
   render() {
     // !将jsx语法，传送到某个节点里面

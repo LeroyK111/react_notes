@@ -11,6 +11,8 @@ const StyleFooter = styled.footer`
 `;
 
 export default function App() {
+  
+  
   return (
     <StyleFooter>
       <ul>
