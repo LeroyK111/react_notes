@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
-import SimpleMDE, { type Options } from "simplemde";
+import { basicSetup, EditorView } from "codemirror";
+import { markdown } from "@codemirror/lang-markdown";
 
 export default function Document(props: props) {
-  const Options: Options = {
-    element: document.querySelector("#document") as HTMLElement,
-  };
-  const simplemde = new SimpleMDE(Options);
+  new EditorView({
+    doc: "123",
+    extensions: [basicSetup, markdown()],
+    parent: document.querySelector("#document") as HTMLElement,
+  });
 
   return (
-    <div className={props.className}>
+    <div >
       <div id="document"></div>
     </div>
   );

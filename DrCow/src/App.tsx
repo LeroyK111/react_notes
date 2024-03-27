@@ -9,7 +9,7 @@ import Draw from "./components/Draw";
 function App() {
   return (
     <div className="app">
-      <Document className="Document"></Document>
+      <Document></Document>
       <Code className="Code"></Code>
       <Flow className="Flow"></Flow>
       <Draw className="Draw"></Draw>
