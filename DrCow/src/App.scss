@@ -1,0 +1,37 @@
+.app {
+  position: relative;
+  width: 100dvw;
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  .Document {
+    background-color: rgba($color: red, $alpha: 0.5);
+  }
+
+  .Code {
+    background-color: pink;
+  }
+
+  .Flow {
+    background-color: skyblue;
+  }
+
+  .Draw {
+    background-color: rgba($color: green, $alpha: 0.5);
+  }
+
+  .NavBar {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 30px;
+    height: 10dvh;
+    background-color: #ccc;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright; /* 让文字保持竖直排列 */
+    white-space: nowrap; /* 防止文字换行 */
+  }
+}
