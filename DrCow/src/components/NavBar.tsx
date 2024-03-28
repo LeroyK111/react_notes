@@ -1,5 +1,14 @@
 import React from "react";
 
 export default function NavBar(props: props) {
-  return <div className={props.className}>NavBar</div>;
+  console.log(props);
+
+  return <div className={props.className}>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>;
 }

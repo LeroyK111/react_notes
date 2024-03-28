@@ -1,19 +1,19 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import "./App.scss";
-import Document from "./components/Document";
-import Code from "./components/Code";
-import Flow from "./components/Flow";
 import NavBar from "./components/NavBar";
-import Draw from "./components/Draw";
+import { useStore } from "./store";
+import { Outlet } from "@tanstack/react-router";
+
+
 
 function App() {
+  
+  const updateNavigationSign = useStore((s) => s.updateNavigationSign);
+
   return (
     <div className="app">
-      <Document></Document>
-      <Code className="Code"></Code>
-      <Flow className="Flow"></Flow>
-      <Draw className="Draw"></Draw>
-      <NavBar className="NavBar"></NavBar>
+      <NavBar className="NavBar" onChange={{ updateNavigationSign }}></NavBar>
+      <Outlet></Outlet>
     </div>
   );
 }

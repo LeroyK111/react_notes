@@ -2,23 +2,6 @@
   position: relative;
   width: 100dvw;
   height: 100dvh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-
-
-
-  .Code {
-    background-color: pink;
-  }
-
-  .Flow {
-    background-color: skyblue;
-  }
-
-  .Draw {
-    background-color: rgba($color: green, $alpha: 0.5);
-  }
 
   .NavBar {
     position: absolute;

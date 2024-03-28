@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "src/routes/draw.lazy.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
