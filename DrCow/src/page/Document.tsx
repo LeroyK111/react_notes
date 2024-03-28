@@ -14,7 +14,7 @@ import SimpleMDE, { type Options } from "simplemde";
 
 export default function Document(props: props) {
   // const { simplemde } = handleCreate("document");
-
+ 
   return (
     <div style={{ backgroundColor: "#ccc" }}>
       <div id="document">document</div>

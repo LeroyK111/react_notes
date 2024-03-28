@@ -9,10 +9,16 @@ import { Outlet } from "@tanstack/react-router";
 function App() {
   
   const updateNavigationSign = useStore((s) => s.updateNavigationSign);
+  const  navigationSign = useStore((s) => s.navigationSign);
+
+  useEffect(() => {
+    console.log(navigationSign);
+  }, [navigationSign])
+  
 
   return (
     <div className="app">
-      <NavBar className="NavBar" onChange={{ updateNavigationSign }}></NavBar>
+      <NavBar className="NavBar"  onChange={updateNavigationSign}></NavBar>
       <Outlet></Outlet>
     </div>
   );
