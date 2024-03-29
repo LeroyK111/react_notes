@@ -158,6 +158,7 @@
   },
   "active": "29cbd84ce4c8aada",
   "lastOpenFiles": [
+    "DrCow/vite.config.ts.timestamp-1711722017881-e62afea7be1c6.mjs",
     "ide-2.7.0/js/ide.js",
     "ide-2.7.0/css/ide.css",
     "ide-2.7.0/images/judge0_background.png",
@@ -172,7 +173,6 @@
     "ide-2.7.0/LICENSE",
     "ide-2.7.0/css",
     "ide-2.7.0/README.md",
-    "ide-2.7.0/CNAME",
     "DrCow/node_modules/@typescript-eslint/eslint-plugin/docs/rules/camelcase.md",
     "DrCow/node_modules/@typescript-eslint/eslint-plugin/docs/rules/TEMPLATE.md",
     "DrCow/node_modules/@typescript-eslint/eslint-plugin/docs/rules/README.md",
