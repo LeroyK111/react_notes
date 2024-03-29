@@ -1,7 +1,6 @@
 import { createRootRoute } from "@tanstack/react-router";
 import React, { Suspense } from "react";
 import App from "../App";
-import { css } from "@emotion/react";
 
 // 开发中使用
 const TanStackRouterDevtools =
@@ -16,9 +15,6 @@ const TanStackRouterDevtools =
         }))
       );
 
-
-
-
 export const Route = createRootRoute({
   component: () => (
     <>
@@ -27,7 +23,7 @@ export const Route = createRootRoute({
       <App></App>
       {/* 直到加载完毕 */}
       <Suspense>
-        {/* <TanStackRouterDevtools  /> */}
+        <TanStackRouterDevtools />
       </Suspense>
     </>
   ),
