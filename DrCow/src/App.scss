@@ -2,17 +2,5 @@
   position: relative;
   width: 100dvw;
   height: 100dvh;
-
-  .NavBar {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 30px;
-    height: 10dvh;
-    background-color: #ccc;
-    transform: translateY(-50%);
-    writing-mode: vertical-rl;
-    text-orientation: upright; /* 让文字保持竖直排列 */
-    white-space: nowrap; /* 防止文字换行 */
-  }
+  overflow-x: hidden;
 }
