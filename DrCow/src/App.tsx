@@ -17,7 +17,6 @@ function App() {
       });
     } else {
       navigate({
-        // @ts-ignore
         to: `/${navigationSign}`,
       });
     }
