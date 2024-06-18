@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DrCow/README.md",
+                "file": "readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DrCow/README.md",
+                "file": "readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DrCow/README.md",
+                "file": "readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DrCow/README.md"
+                "file": "readme.md"
               }
             }
           }
@@ -143,8 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,6 +157,9 @@
   },
   "active": "29cbd84ce4c8aada",
   "lastOpenFiles": [
+    "react19.md",
+    "readme.md",
+    "DrCow/README.md",
     "DrCow/vite.config.ts.timestamp-1711722017881-e62afea7be1c6.mjs",
     "ide-2.7.0/js/ide.js",
     "ide-2.7.0/css/ide.css",
@@ -171,7 +173,6 @@
     "ide-2.7.0/favicon.ico",
     "ide-2.7.0/images",
     "ide-2.7.0/LICENSE",
-    "ide-2.7.0/css",
     "ide-2.7.0/README.md",
     "DrCow/node_modules/@typescript-eslint/eslint-plugin/docs/rules/camelcase.md",
     "DrCow/node_modules/@typescript-eslint/eslint-plugin/docs/rules/TEMPLATE.md",
@@ -194,8 +195,6 @@
     "DrCow/node_modules/style-mod/src/README.md",
     "DrCow/node_modules/marked/man/marked.1.md",
     "DrCow/node_modules/goober/prefixer/README.md",
-    "DrCow/node_modules/date-fns/docs/webpack.md",
-    "DrCow/node_modules/date-fns/docs/upgradeGuide.md",
     "DrCow/node_modules/date-fns/docs/logotype.svg",
     "DrCow/node_modules/date-fns/docs/logo.svg",
     "readme.assets/image-20220825143322957.png",
