@@ -44,13 +44,16 @@ export default class State extends Component {
     // *可以直接监听状态， 但是限于表层
     if (this.state.text === "取消收藏") {
       // 变换状态
-      this.setState({ text: "收藏" });
-      alert("取消收藏");
+      this.setState({ text: "收藏", demo: { x: "收藏" } });
+      console.log(this.state.demo);
+      // alert("取消收藏");
     } else {
       this.setState({
         text: "取消收藏",
+        demo: { x: '取消收藏' },
       });
-      alert("收藏成功");
+      console.log(this.state.demo);
+      // alert("收藏成功");
     }
   }
 }

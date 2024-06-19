@@ -7,7 +7,7 @@ export default function Sidebar(props) {
   return (
     <div>
       <h2>函数式</h2>
-      <ul style={{background: bg}}>
+      <ul style={{background: bg, height: '100px', overflowY: 'scroll'}}>
         <li>1</li>
         <li>2</li>
         <li>3</li>

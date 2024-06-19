@@ -24,7 +24,6 @@ export default class TabControl extends Component {
         text: "我的",
       },
     ],
-
     checkLiNum: 0,
   };
 
@@ -49,7 +48,7 @@ export default class TabControl extends Component {
         {this.state.checkLiNum === 1 && <Cinema></Cinema>}
         {this.state.checkLiNum === 2 && <Center></Center>} */}
         {this.which()}
-
+        
         <div className="todobar">
           <ul>
             {this.state.list.map((item, index) => (

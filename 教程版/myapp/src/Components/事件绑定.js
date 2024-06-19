@@ -5,9 +5,6 @@ import React, { Component } from "react";
 
 export default class Event1 extends Component {
   a = "测试this";
-  
-  
-
 
   render() {
     return (

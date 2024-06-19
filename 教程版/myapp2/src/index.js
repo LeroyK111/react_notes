@@ -3,7 +3,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 
 // !生命周期
-// import App from "./Life/生命周期"
+import App from "./Life/生命周期"
 // import App from "./Life/案例1"
 // import App from "./Life/运行中的生命周期"
 // import App from "./Life/运行周期"
@@ -119,7 +119,7 @@ import { createRoot } from "react-dom/client";
 
 // !Components 用法
 // import App from "./Components/状态树";
-import App from "./Components/插槽slot";
+// import App from "./Components/插槽slot";
 
 const container = document.getElementById("root");
 const root = createRoot(container);

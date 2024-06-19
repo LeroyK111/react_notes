@@ -11,7 +11,6 @@ export default class Prop extends Component {
     }
 
 
-
     return (
       <div>
         {/* 引入子组件 */}

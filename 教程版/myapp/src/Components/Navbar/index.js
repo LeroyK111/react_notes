@@ -2,15 +2,19 @@ import React, { Component } from "react";
 
 // 传参验证
 import PropTypes from "prop-types";
+
+
 export default class Navbar extends Component {
   state = {
     a: 1,
   };
 
+  
   static propTypes = {
     // !放到类里面，也可以验证
     title1: PropTypes.string,
     leftshow: PropTypes.bool,
+
   };
 
   static defaultProps = {
@@ -22,7 +26,6 @@ export default class Navbar extends Component {
 
   render() {
     // 这里可以直接接收到参数props
-    // console.log(this.props);
     let { title1, leftshow } = this.props;
     console.log(this.props);
     return (

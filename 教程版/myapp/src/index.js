@@ -2,7 +2,7 @@
 // 引入核心包 jsx语法
 import React from "react";
 // reactDOM包，虚拟dom
-// import ReactDOM from "react-dom";
+import ReactDOM from "react-dom";
 
 // !渲染
 // ReactDOM.render(<div>1 <p>2</p></div>, document.querySelector("#root"));
@@ -30,16 +30,15 @@ import React from "react";
 // !css样式
 // ReactDOM.render(<App3></App3>, document.querySelector("#root2"));
 
-/*
-!最新的写法，直接将根节点实例化一个对象，然后链式调用渲染方法。
-// After
-import { createRoot } from 'react-dom/client';
-const container = document.getElementById('app');
-const root = createRoot(container); // createRoot(container!) if you use TypeScript
-root.render(<App tab="home" />);
 
-!由于教程的原因，我们选择react17作为学习。后续我们选择最新的react语法学习
-*/
+// !最新的写法，直接将根节点实例化一个对象，然后链式调用渲染方法。
+// import { createRoot } from 'react-dom/client';
+// const container = document.getElementById('app');
+// const root = createRoot(container); // createRoot(container!) if you use TypeScript
+// root.render(<App tab="home" />);
+
+// !由于教程的原因，我们选择react17作为学习。后续我们选择最新的react语法学习
+
 
 // !事件绑定
 // import Event1 from "./Components/事件绑定"
@@ -75,14 +74,12 @@ root.render(<App tab="home" />);
 // !选项卡案例
 import { createRoot } from "react-dom/client";
 
-// import TabControl from "./Components/选项卡";
+// const container = document.getElementById("root");
+// const root = createRoot(container);
 // *测试同步和异步
 // import AddTest from "./Components/setData同步异步";
-
-const container = document.getElementById("root");
-const root = createRoot(container);
-
 // root.render(<AddTest></AddTest>)
+// import TabControl from "./Components/选项卡";
 // root.render(<TabControl></TabControl>);
 
 // * 测试插件
@@ -101,7 +98,7 @@ const root = createRoot(container);
 // import App from "./Components/受控"
 // root.render(<App></App>)
 
-import Cinema from "./Components/受控案例"
+// import Cinema from "./Components/受控案例"
 
 // *我们使用最新react18的写法
-root.render(<Cinema></Cinema>)
+// root.render(<Cinema></Cinema>)

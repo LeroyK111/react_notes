@@ -6,6 +6,7 @@ export default class Test extends Component {
 
   render() {
     const {GlobalContext} = this.props
+    
     return (
       // 测试消费者
       <GlobalContext.Consumer>

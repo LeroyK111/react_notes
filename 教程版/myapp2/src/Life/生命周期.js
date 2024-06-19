@@ -9,7 +9,7 @@ export default class App extends Component {
   UNSAFE_componentWillMount(){
     // ! 组件初始化，挂载state，只执行一次，拿不到dom
     console.log(document.querySelector("#test"));
-    // ! 这个API已经弃用componentWillMount，已经不够安全了
+    // ! 这个API已经弃用 componentWillMount ，已经不够安全了
   }
 
   componentDidMount(){
@@ -22,7 +22,7 @@ export default class App extends Component {
     ! 基于创建完的dom进行初始化。很多插件需要获取dom对象。
     */
   }
-
+  
   render() {
     console.log("正在渲染...");
     return (

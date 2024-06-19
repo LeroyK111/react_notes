@@ -1338,7 +1338,160 @@ function App() {
 </div>
 当请求成功后，会渲染<Cpn />。
 
+## 其他技巧
 
-# React [18.2.0](https://github.com/facebook/react/releases/tag/v18.2.0)
+### 元编程：创建动态组件
+`React.createElement() 方法`
+动态创建HTML元素。
+```tsx
+import React from 'react';
 
-重开一个新项目，重新学习api
+// 动态创建 HTML 元素
+const DynamicHTMLElement = ({ tag, children, ...props }) => {
+  return React.createElement(tag, props, children);
+};
+
+const App = () => {
+  return (
+    <div>
+      <h1>Dynamic HTML Element Example</h1>
+      <DynamicHTMLElement tag="h2">This is a dynamic h2</DynamicHTMLElement>
+      <DynamicHTMLElement tag="p">This is a dynamic paragraph</DynamicHTMLElement>
+      <DynamicHTMLElement tag="button" onClick={() => alert('Clicked!')}>
+        Click me
+      </DynamicHTMLElement>
+    </div>
+  );
+};
+
+export default App;
+
+```
+动态创建 自定义组件 。
+```tsx
+import React from 'react';
+
+// 定义一些自定义组件
+const HeaderComponent = () => <h2>This is a header component</h2>;
+const ParagraphComponent = () => <p>This is a paragraph component</p>;
+const ButtonComponent = ({ onClick, children }) => (
+  <button onClick={onClick}>{children}</button>
+);
+
+// 动态创建自定义组件
+const DynamicComponent = ({ component, ...props }) => {
+  return React.createElement(component, props);
+};
+
+const App = () => {
+  return (
+    <div>
+      <h1>Dynamic Component Example</h1>
+      <DynamicComponent component={HeaderComponent} />
+      <DynamicComponent component={ParagraphComponent} />
+      <DynamicComponent component={ButtonComponent} onClick={() => alert('Clicked!')}>
+        Click me
+      </DynamicComponent>
+    </div>
+  );
+};
+
+export default App;
+
+```
+
+
+### 原生html渲染
+- dangerouslySetInnerHTML 直接差人html
+- DOMPurify 字符串化消毒
+```tsx
+import React, { useState, useEffect } from 'react';
+import DOMPurify from 'dompurify';
+
+const RichTextRenderer = ({ htmlContent }) => {
+  const createMarkup = (html) => {
+    return { __html: DOMPurify.sanitize(html) };
+  };
+  return <div dangerouslySetInnerHTML={createMarkup(htmlContent)} />;
+};
+
+const App = () => {
+  const [htmlContent, setHtmlContent] = useState('');
+
+  useEffect(() => {
+    // 模拟从外部源获取 HTML 内容
+    const fetchHtmlContent = async () => {
+      const response = await fetch('https://example.com/rich-text-content');
+      const html = await response.text();
+      setHtmlContent(html);
+    };
+
+    fetchHtmlContent();
+  }, []);
+
+  return (
+    <div>
+      <h1>Rich Text Renderer</h1>
+      <RichTextRenderer htmlContent={htmlContent} />
+    </div>
+  );
+};
+
+export default App;
+```
+
+### JSX专用语法
+
+#### htmlFor
+`你可以在 `label` 标签中使用 `htmlFor` 属性来绑定 `input` 标签。`htmlFor` 的值应该与 `input` 标签的 `id` 属性的值相同。`
+```jsx
+import React, { useState } from 'react';
+
+const Form = () => {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  return (
+    <form>
+      <div>
+        <label htmlFor="input-field">Enter Text:</label>
+        <input
+          type="text"
+          id="input-field"
+          value={inputValue}
+          onChange={handleChange}
+        />
+      </div>
+    </form>
+  );
+};
+
+export default Form;
+
+```
+
+#### 其他jsx专用属性
+- **`className`**：用于定义 CSS 类名。
+- **`onClick`**：用于处理按钮点击事件。
+- **`tabIndex`**：用于设置键盘导航顺序。
+- **`readOnly`**：设置输入框为只读模式。
+- **`maxLength`**：限制输入框的最大字符数。
+- **`defaultValue`**：用于设置非受控组件的初始值。
+- **`defaultChecked`**：用于设置复选框和单选按钮的初始选中状态。
+- **`suppressContentEditableWarning`**：用于抑制内容可编辑元素的警告。
+- **`spellCheck`**：启用或禁用拼写检查。
+- **`autoFocus`**：在页面加载时自动聚焦到元素。
+- **`formNoValidate`**：禁用表单的验证。
+- **`inputMode`**：设置虚拟键盘的预期输入模式。
+- **`acceptCharset`**: 用于指定表单提交时的字符编码。
+- **`httpEquiv`**: 提供 HTTP 头部信息。
+- **`noValidate`**: 禁用表单验证。
+- **`autoComplete`**: 启用或禁用输入字段的自动完成功能。
+- **`crossOrigin`**: 处理跨域请求。
+- **`encType`**: 指定表单数据的编码类型。
+- **`inputMode`**: 设置虚拟键盘的预期输入模式。
+- **`aria-*` 属性和 `role` 属性**: 增强可访问性。
+- **`autoCapitalize`, `autoCorrect`, `autoSave`**: 用于控制自动大写、自动校正和自动保存行为。

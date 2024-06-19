@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
       <div>
         {/* 类组件 */}
-        <Navbar title1={"世界"}></Navbar>
+        <Navbar title1={"世界"} stats="ok" msg="class组件收到传参"></Navbar>
 
         {/* 函数式组件 */}
         <Sidebar bg="yellow"></Sidebar>
