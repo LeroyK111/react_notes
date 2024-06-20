@@ -20,7 +20,6 @@ class Child extends Component{
     return <div style={{width: '200px', height: '200px', background:"red"}}></div>
   }
 
-
   // 销毁组件
   componentWillUnmount() {
     console.log("我被销毁了");

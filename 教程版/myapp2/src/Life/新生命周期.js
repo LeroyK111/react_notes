@@ -20,24 +20,24 @@ export default class App extends Component {
     a: 1,
   };
 
-  // static getDerivedStateFromProps(props, state) {
-  //   /*
-  //   !等价的功能
-  //   !UNSAFE_componentWillMount() 组件被初始化
-  //   !componentDidMount() 组件被渲染
-  //   !UNSAFE_componentWillReceiveProps(*nextProps*) 被父组件触发
-  //   */
-  //   console.log("111");
+  static getDerivedStateFromProps(props, state) {
+    /*
+    !等价的功能
+    !UNSAFE_componentWillMount() 组件被初始化
+    !componentDidMount() 组件被渲染
+    !UNSAFE_componentWillReceiveProps(*nextProps*) 被父组件触发
+    */
+    console.log("111");
 
-  //   console.log(document.querySelector("#box"));
+    console.log(document.querySelector("#box"));
 
-  //   console.log(state);
+    console.log(state);
 
-  //   return {
-  //     // 这里return 改变的是state
-  //     a: state.a,
-  //   };
-  // }
+    return {
+      // 这里return 改变的是state
+      a: state.a,
+    };
+  }
 
   render() {
     return (
@@ -61,8 +61,7 @@ export default class App extends Component {
 
 
   /*
-  !取代componentWillUpdate，触发时间改在render之后，dom插入之前。
-
+  !取代 componentWillUpdate ，触发时间改在render之后，dom插入之前。
   !componentDidUpdate(*prevProps*, *prevState*, next) 拿到已更新的dom
   */
 
@@ -71,7 +70,7 @@ export default class App extends Component {
     // 拿到旧的属性和状态
     console.log(prevProps, prevState);
 
-    return "这个值会返回给componentDidUpdate的next"
+    return "这个值会返回给 componentDidUpdate 的 next"
   }
 
   componentDidUpdate(prevProps, prevState, next) {

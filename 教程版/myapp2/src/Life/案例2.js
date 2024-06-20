@@ -39,6 +39,7 @@ export default class App extends Component {
               current: parseInt(e.target.value),
             });
           }}
+          value={this.state.current}
         />
         <div style={{ overflow: "hidden" }}>
           {this.state.list.map((item, index) => (

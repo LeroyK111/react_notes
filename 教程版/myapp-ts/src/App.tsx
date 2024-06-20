@@ -16,15 +16,14 @@ import Demo from "./router_demo/Demo";
 
 function App() {
   return (
-    <div>
+    <>
       {/* <FuncTs name={"123"}></FuncTs> */}
       {/* <ClassTs></ClassTs> */}
       {/* <Todolist></Todolist> */}
       {/* <Props></Props> */}
       {/* <App1></App1> */}
-
       <Demo></Demo>
-    </div>
+    </>
   );
 }
 

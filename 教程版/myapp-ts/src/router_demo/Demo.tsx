@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import store from "./redux/store";
-
 import style from "./views/css/demo.module.css";
-
 import IndexRounter from "./router/index";
 
 export default function Demo() {

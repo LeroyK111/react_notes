@@ -28,10 +28,10 @@ export default class App extends PureComponent {
   }
 
   // 手动比对数据，查看需不需要更新dom
-  // shouldComponentUpdate(nextProps, nextState){
-  //   // 这里next就是新状态，新传参
-  //   // 老状态还在this.state中
-  //   return this.state.myname !== nextState.myname; // false阻止更新，true允许更新
-  // }
+  shouldComponentUpdate(nextProps, nextState){
+    // 这里next就是新状态，新传参
+    // 老状态还在this.state中
+    return this.state.myname !== nextState.myname; // false阻止更新，true允许更新
+  }
   
 }

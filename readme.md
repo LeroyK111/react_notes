@@ -347,6 +347,36 @@ react的Ref是对象标记，可以获取DOM元素or组件对象，实现数据�
 ![image-20220819011011065](readme.assets/image-20220819011011065.png)
 
 ## 生命周期
+### class组件生命周期
+| 生命周期方法                               | 阶段     | 描述                                                         | 用法示例                                                                                                                                                                                                   | 状态        |
+| ------------------------------------ | ------ | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
+| constructor(props)                   | 挂载     | 初始化组件的状态和绑定事件处理程序。                                         | `jsx<br>constructor(props) {<br> super(props);<br> this.state = { count: 0 };<br> }<br>`                                                                                                               | 活跃        |
+| static getDerivedStateFromProps      | 挂载/更新  | 在每次渲染之前调用，返回一个对象来更新状态，或返回 `null` 表示状态不变。                   | `jsx<br>static getDerivedStateFromProps(nextProps, prevState) {<br> if (nextProps.someValue !== prevState.someValue) {<br> return { someValue: nextProps.someValue };<br> }<br> return null;<br>}<br>` | 活跃        |
+| componentDidMount                    | 挂载     | 组件挂载后立即调用。适合进行数据请求或订阅等操作。                                  | `jsx<br>componentDidMount() {<br> // Fetch data or initiate subscription<br> }<br>`                                                                                                                    | 活跃        |
+| ~~UNSAFE_componentWillMount~~        | ~~挂载~~ | ~~组件挂载前调用。不推荐使用。~~                                         | ~~`jsx<br>UNSAFE_componentWillMount() {<br> // Do something before mounting<br> }<br>`~~                                                                                                               | ~~不推荐使用~~ |
+| shouldComponentUpdate                | 更新     | 用于决定组件是否需要重新渲染。返回 `true` 进行重新渲染，返回 `false` 阻止重新渲染。         | `jsx<br>shouldComponentUpdate(nextProps, nextState) {<br> return nextProps.value !== this.props.value;<br>}<br>`                                                                                       | 活跃        |
+| render                               | 挂载/更新  | 返回要渲染的 JSX 元素。                                             | `jsx<br>render() {<br> return (<br> <div>{this.state.count}</div><br> );<br>}<br>`                                                                                                                     | 活跃        |
+| getSnapshotBeforeUpdate              | 更新     | 在最近一次渲染输出（提交到 DOM）之前调用。返回值将作为 `componentDidUpdate` 的第三个参数。 | `jsx<br>getSnapshotBeforeUpdate(prevProps, prevState) {<br> return { scrollPosition: window.scrollY };<br>}<br>`                                                                                       | 活跃        |
+| componentDidUpdate                   | 更新     | 组件更新后立即调用。适合进行 DOM 操作或网络请求。                                | `jsx<br>componentDidUpdate(prevProps, prevState, snapshot) {<br> if (snapshot) {<br> // Perform some operation<br> }<br>}<br>`                                                                         | 活跃        |
+| ~~UNSAFE_componentWillReceiveProps~~ | ~~更新~~ | ~~接收到新的 props 之前调用，不推荐使用。~~                                | ~~`jsx<br>UNSAFE_componentWillReceiveProps(nextProps) {<br> // Do something with new props<br> }<br>`~~                                                                                                | ~~不推荐使用~~ |
+| ~~UNSAFE_componentWillUpdate~~       | ~~更新~~ | ~~组件更新之前调用，不推荐使用。~~                                        | ~~`jsx<br>UNSAFE_componentWillUpdate(nextProps, nextState) {<br> // Do something before update<br> }<br>`~~                                                                                            | ~~不推荐使用~~ |
+| componentWillUnmount                 | 卸载     | 组件卸载及销毁之前调用。适合进行清理操作，例如取消订阅或清理定时器。                         | `jsx<br>componentWillUnmount() {<br> // Clean up<br> }<br>`                                                                                                                                            | 活跃        |
+
+### func组件生命周期
+
+| 生命周期方法              | 阶段       | 描述                                                                         | 用法示例                                                                                                              | 状态  |
+| ------------------- | -------- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | --- |
+| useState            | 任意       | 用于在函数组件中添加状态。                                                              | `jsx<br>const [count, setCount] = useState(0);<br>`                                                               | 活跃  |
+| useEffect           | 挂载/更新/卸载 | 相当于 `componentDidMount`、`componentDidUpdate` 和 `componentWillUnmount` 的组合。 | `jsx<br>useEffect(() => {<br> // Side effect<br> return () => {<br> // Cleanup<br> };<br>}, [dependencies]);<br>` | 活跃  |
+| useLayoutEffect     | 挂载/更新    | 类似于 `useEffect`，但会在所有 DOM 变更之后同步调用。适合进行 DOM 操作。                            | `jsx<br>useLayoutEffect(() => {<br> // DOM updates<br> }, [dependencies]);<br>`                                   | 活跃  |
+| useRef              | 任意       | 用于访问 DOM 元素或保持不变的变量。                                                       | `jsx<br>const myRef = useRef(null);<br>`                                                                          | 活跃  |
+| useContext          | 任意       | 用于在组件中读取 React 上下文。                                                        | `jsx<br>const value = useContext(MyContext);<br>`                                                                 | 活跃  |
+| useReducer          | 任意       | 类似于 `useState`，用于更复杂的状态逻辑。                                                 | `jsx<br>const [state, dispatch] = useReducer(reducer, initialState);<br>`                                         | 活跃  |
+| useMemo             | 任意       | 用于优化性能，通过记住计算结果，避免在每次渲染时重新计算。                                              | `jsx<br>const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);<br>`                            | 活跃  |
+| useCallback         | 任意       | 用于优化性能，通过记住回调函数，避免在每次渲染时重新创建。                                              | `jsx<br>const memoizedCallback = useCallback(() => {<br> doSomething(a, b);<br> }, [a, b]);<br>`                  | 活跃  |
+| useImperativeHandle | 任意       | 用于自定义 `ref` 对象暴露给父组件的实例值。                                                  | `jsx<br>useImperativeHandle(ref, () => ({<br> someInstanceMethod<br> }));<br>`                                    | 活跃  |
+| useDebugValue       | 任意       | 用于在 React 开发者工具中显示自定义 hook 的标签。                                            | `jsx<br>useDebugValue(value);<br>`                                                                                | 活跃  |
+
 
 ```
 组件挂载: 
@@ -443,11 +473,50 @@ getSnapshotBeforeUpdate() 这个钩子更常用
 
 ### 性能优化
 
-shouldComponentUpdate() 控制dom元素是否重新渲染，以此来优化性能.
+#### shouldComponentUpdate() 
+控制dom元素是否重新渲染，以此来优化性能.
 
-PureComponent 纯粹组件功能.
+#### PureComponent 纯粹组件功能.
 
 ![image-20220821235450509](readme.assets/image-20220821235450509.png)
+
+#### React.memo
+`React.memo` 是 React 中用于优化函数组件性能的一个高阶组件（Higher-Order Component，HOC）。它类似于 `React.PureComponent`，但适用于函数组件。`React.memo` 通过对比前后两次的 props，如果 props 没有变化，则跳过渲染过程，从而提高性能。
+```tsx
+const MemoizedComponent = React.memo(Component);
+```
+- **性能优化**：当一个组件由于父组件的重新渲染而频繁重新渲染，但其 props 实际上并没有变化时，可以使用 `React.memo` 进行优化。
+```tsx
+import React, { useState } from 'react';
+
+const ComplexChildComponent = React.memo(({ count, user }) => {
+  console.log('ComplexChildComponent rendered');
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <p>User: {user.name}</p>
+    </div>
+  );
+}, (prevProps, nextProps) => {
+  return prevProps.count === nextProps.count && prevProps.user.name === nextProps.user.name;
+});
+
+const ParentComponent = () => {
+  const [count, setCount] = useState(0);
+  const [user, setUser] = useState({ name: 'John' });
+
+  return (
+    <div>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setUser({ name: 'Jane' })}>Change User</button>
+      <ComplexChildComponent count={count} user={user} />
+    </div>
+  );
+};
+
+export default ParentComponent;
+```
+
 
 ## hooks
 
@@ -467,7 +536,7 @@ useReducer useState的高级用法
 useCallback 优化方法
 useMemo 计算属性
 useRef 标记dom
-useImperativeHandle 暴露给父组件dom
+useImperativeHandle 暴露给父组件dom 
 useLayoutEffect	dom加载完毕后，调用
 useDebugValue debug标记，控制台
 useDeferredValue 防抖，节流, 延时
@@ -477,6 +546,42 @@ useId 组件属性唯一id
 useSyncExternalStore 高级并发渲染
 useInsertionEffect useEffect类似，但功能有限
 ```
+
+### 操作dom
+```jsx
+import React, { useRef, useImperativeHandle, forwardRef, useState } from 'react';
+
+const ChildComponent = forwardRef((props, ref) => {
+  const [count, setCount] = useState(0);
+
+	// 通常结合：forwardRef & useImperativeHandle 起来用
+  useImperativeHandle(ref, () => ({
+    increment() {
+      setCount(prevCount => prevCount + 1);
+    },
+    reset() {
+      setCount(0);
+    }
+  }));
+
+  return <div>Count: {count}</div>;
+});
+
+const ParentComponent = () => {
+  const childRef = useRef();
+
+  return (
+    <div>
+      <ChildComponent ref={childRef} />
+      <button onClick={() => childRef.current.increment()}>Increment from Parent</button>
+      <button onClick={() => childRef.current.reset()}>Reset from Parent</button>
+    </div>
+  );
+};
+
+export default ParentComponent;
+```
+
 
 useState
 
@@ -1018,7 +1123,7 @@ npm install redux-saga
 
 冷门知识。
 
-### portal
+### portal dom传送
 
 dom节点传送门。把dom渲染到root根节点之外。
 
@@ -1495,3 +1600,4 @@ export default Form;
 - **`inputMode`**: 设置虚拟键盘的预期输入模式。
 - **`aria-*` 属性和 `role` 属性**: 增强可访问性。
 - **`autoCapitalize`, `autoCorrect`, `autoSave`**: 用于控制自动大写、自动校正和自动保存行为。
+

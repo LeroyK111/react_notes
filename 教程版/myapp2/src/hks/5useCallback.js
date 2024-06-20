@@ -7,6 +7,8 @@ export default function App() {
   const handleAdd = useCallback(
     // !防止因为组件重新渲染，导致方法被重新创建，起到缓存作用。
     // *主要是用来存放不经常改变的值
+    // useCallback：用于记忆化回调函数，避免每次渲染时都重新创建该函数。
+    // useMemo：用于记忆化计算结果，避免每次渲染时都重新计算。
     (evt) => {
       console.log(1);
       setvalue("");

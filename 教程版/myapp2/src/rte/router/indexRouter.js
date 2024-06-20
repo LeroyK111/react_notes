@@ -41,10 +41,8 @@ export default function Router(props) {
       <Switch>
         <Route path="/films" component={Films}></Route>
         <Route path="/cinemas" component={Cinemas}></Route>
-
         {/* 这种是多级路由，其实还是一个组件，父亲不加exact，还匹配不到 */}
         <Route path="/cinemas/api" component={Cinemasapi}></Route>
-
         {/* 这里嵌套一个子路由 */}
         {/* <Route path="/center" component={Center}></Route> */}
         {/* 使用路由拦截 */}
@@ -59,9 +57,7 @@ export default function Router(props) {
             );
           }}
         ></Route>
-
         <Route path={"/login"} component={Login}></Route>
-
         {/* 路由传参,动态传参，这种推荐 */}
         <Route path={"/detail/:myid"} component={Detail}></Route>
         {/* 第二种方式，不推荐，会丢失数据 */}

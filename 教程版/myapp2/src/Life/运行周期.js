@@ -2,10 +2,8 @@ import React, { Component } from "react";
 
 export default class App extends Component {
   state = {
-    myname: "kerwin",
+    myname: 22,
   };
-
-
 
   render() {
     console.log("render");
@@ -13,9 +11,9 @@ export default class App extends Component {
       <div>
         <button
           onClick={() => {
-            this.setState({
-              myname: "14",
-            });
+            this.setState((state) => ({
+              myname: (state.myname += 1),
+            }));
           }}
         >
           点我
@@ -26,10 +24,10 @@ export default class App extends Component {
   }
 
   // 手动比对数据，查看需不需要更新dom
-  shouldComponentUpdate(nextProps, nextState){
+  shouldComponentUpdate(nextProps, nextState) {
     // 这里next就是新状态，新传参
     // 老状态还在this.state中
-    return this.state.myname !== nextState.myname; // false阻止更新，true允许更新
+    console.log(this.state.myname, nextState.myname);
+    return this.state.myname === nextState.myname; // false阻止更新，true允许更新
   }
-  
 }

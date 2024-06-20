@@ -1,9 +1,9 @@
-import React, { Component, memo } from "react";
+import React, { Component, memo, useEffect } from "react";
 
 export default class App extends Component {
   state = {
-    name: "Leroy",
-    title: "除非我改变，否则子组件不更新",
+    name: 1,
+    title: "除非title改变，否则子组件不更新",
   };
   render() {
     return (
@@ -12,11 +12,11 @@ export default class App extends Component {
         <button
           onClick={() => {
             this.setState({
-              name: "waklsdjfklj",
+              name: this.state.name += 1,
             });
           }}
         >
-          click
+          改变名字
         </button>
         <button
           onClick={() => {
@@ -28,7 +28,7 @@ export default class App extends Component {
           click
         </button>
         {/* 阻止孩子，随着父组件更新 */}
-        <Child {...this.state}></Child>
+        <Child title={this.state.title}></Child>
       </div>
     );
   }
@@ -36,5 +36,12 @@ export default class App extends Component {
 
 const Child = memo((props) => {
   console.log(111);
+
+  useEffect(() => {
+    console.log('子组件会随着更新吗');
+
+    return;
+  }, [props]);
+
   return <div>chlid----{props?.title}</div>;
 });

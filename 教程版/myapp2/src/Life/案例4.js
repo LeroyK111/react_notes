@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 
 export default class App extends Component {
   state = {
     list: [...Array(10).keys()],
   };
   // 使用标签ref获取标签
-  myref = React.createRef();
+  myref = createRef();
 
   render() {
     return (
@@ -14,8 +14,8 @@ export default class App extends Component {
           onClick={() => {
             this.setState({
               list: [
-                ...[...Array(20).keys()].splice(10, 10),
                 ...this.state.list,
+                ...[...Array(20).keys()].splice(10, 10),
               ],
             });
           }}
@@ -46,12 +46,12 @@ export default class App extends Component {
   // 记录
   getSnapshotBeforeUpdate(prevProps, prevState) {
     // 获取变化之前的容器高度
-    return this.myref.current.scrollHeight
+    return this.myref.current.scrollHeight;
   }
 
   componentDidUpdate(prevProps, prevState, oldHeight) {
     // 容器dom渲染完毕后的距离
-    let newHeight = this.myref.current.scrollHeight
-   this.myref.current.scrollTop += newHeight - oldHeight
+    let newHeight = this.myref.current.scrollHeight;
+    this.myref.current.scrollTop += newHeight - oldHeight;
   }
 }

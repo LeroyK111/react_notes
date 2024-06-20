@@ -13,6 +13,17 @@ class FilmList extends Component {
     }
   }
 
+  // !static getDerivedStateFromProps(props, state): 静态方法最常用
+  // static getDerivedStateFromProps(nextProps, prevState) {
+    // 在每次渲染之前调用，返回一个对象来更新状态，或返回 null 表示状态不变。
+  //   if (nextProps.someValue !== prevState.someValue) {
+  //     return { someValue: nextProps.someValue };
+  //   }
+  //   return null;
+  // }
+
+
+
   render() {
     return <div>FilmList - {this.props.type}</div>;
   }

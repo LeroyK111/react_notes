@@ -1,18 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class App extends Component {
-
   state = {
-    a: "测试中"
-  }
+    a: "测试componentDidMount",
+  };
 
-  UNSAFE_componentWillMount(){
+  UNSAFE_componentWillMount() {
     // ! 组件初始化，挂载state，只执行一次，拿不到dom
-    console.log(document.querySelector("#test"));
+    console.log("？？", document.querySelector("#test"));
     // ! 这个API已经弃用 componentWillMount ，已经不够安全了
   }
 
-  componentDidMount(){
+  componentDidMount() {
     // !render渲染完毕之后执行，render可以多次渲染
     console.log(document.querySelector("#test"));
     /*
@@ -21,13 +20,22 @@ export default class App extends Component {
     ! 定时器
     ! 基于创建完的dom进行初始化。很多插件需要获取dom对象。
     */
-  }
-  
-  render() {
-    console.log("正在渲染...");
-    return (
-      <div id='test'>生命周期</div>
-    )
+    this.test();
   }
 
+  
+
+  test(param) {
+    const unsetTimeout = setTimeout(() => {
+      this.setState((state)=>({a: "？？？？"}))
+    }, 1000);
+  }
+
+  
+
+
+  render() {
+    console.log("正在渲染...");
+    return <div id="test">{this.state.a}</div>;
+  }
 }

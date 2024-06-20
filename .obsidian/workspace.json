@@ -157,6 +157,8 @@
   },
   "active": "29cbd84ce4c8aada",
   "lastOpenFiles": [
+    "教程版/myapp-ts/node_modules/fsevents",
+    "教程版/myapp2/src/hks/10useImperativeHandle.js",
     "教程版/myapp2/node_modules/fsevents",
     "教程版/myapp/node_modules/fsevents",
     "react19.md",
@@ -172,8 +174,6 @@
     "ide-2.7.0/js",
     "ide-2.7.0/third_party",
     "ide-2.7.0/index.html",
-    "ide-2.7.0/favicon.ico",
-    "ide-2.7.0/images",
     "ide-2.7.0/README.md",
     "DrCow/node_modules/@typescript-eslint/eslint-plugin/docs/rules/camelcase.md",
     "DrCow/node_modules/@typescript-eslint/eslint-plugin/docs/rules/TEMPLATE.md",
