@@ -6,7 +6,10 @@
 import { Route } from "@tanstack/react-router";
 import { rootRoute } from "./__root";
 import aboutInfo from "../page/aboutInfo";
+import testCreate from "../page/testCreate.tsx";
 import userInfo from "../view/userInfo";
+
+
 
 const indexRoute = new Route({
   getParentRoute: () => rootRoute,
@@ -19,9 +22,14 @@ const userInfos = new Route({
   path: "/userInfo",
   component: userInfo,
 });
+// 测试子页面
+const testCreateComponent = new Route({
+  getParentRoute: () => rootRoute,
+  path: "/testCreate",
+  component: testCreate,
+});
 
 
 indexRoute.addChildren([userInfos])
 
-
-export const routeTree = rootRoute.addChildren([indexRoute]);
+export const routeTree = rootRoute.addChildren([indexRoute, testCreateComponent]);

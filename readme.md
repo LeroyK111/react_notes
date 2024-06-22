@@ -1447,6 +1447,11 @@ function App() {
 
 ### 元编程：创建动态组件
 `React.createElement() 方法`
+
+```
+tips: 比vue3的h函数好用多了，动态创建组件后，可以继续绑定事件和数据绑定。
+```
+
 动态创建HTML元素。
 ```tsx
 import React from 'react';
