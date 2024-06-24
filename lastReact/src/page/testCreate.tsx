@@ -5,7 +5,7 @@
 
 // @ts-nocheck
 import React, { useRef, useEffect, forwardRef, useState } from "react";
-
+import useTest from '../hooks/useTest'
 // 动态创建 HTML 元素
 const DynamicHTMLElement = forwardRef((props, ref) => {
   let obj = { ref };
@@ -17,7 +17,22 @@ const DynamicHTMLElement = forwardRef((props, ref) => {
   return React.createElement(props.type, obj, props.children);
 });
 
+
+
+
+
 const testCreate = () => {
+  // 调用钩子，
+  const Test = useTest()
+  useEffect(() => {
+    setTimeout(() => {
+      Test.diyEvent(123123)
+    }, 1000);
+    
+  }, [])
+  
+
+
   const handleEle = useRef(null);
   const [first, setfirst] = useState(1);
 
