@@ -23,13 +23,13 @@ const DynamicHTMLElement = forwardRef((props, ref) => {
 
 const testCreate = () => {
   // 调用钩子，
-  const Test = useTest()
-  useEffect(() => {
-    setTimeout(() => {
-      Test.diyEvent(123123)
-    }, 1000);
+  // const Test = useTest()
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     Test.diyEvent(123123)
+  //   }, 1000);
     
-  }, [])
+  // }, [])
   
 
 

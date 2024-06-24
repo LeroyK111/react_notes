@@ -5,8 +5,13 @@
 
 import React, { useEffect, useState } from "react";
 
-export default () => {
+export default (props: any) => {
   const [first, setFirst] = useState("2");
+
+  // 狗子函数，海曙
+  console.log(props);
+  
+  
 
   useEffect(() => {
     console.log("一样会生效");
