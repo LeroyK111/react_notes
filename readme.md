@@ -597,7 +597,7 @@ useLayoutEffect（避免页面抖动）
 
 ### 记忆函数
 
-useCallback() 存放不常发生变化的状态
+useCallback() 存放不常发生变化函数，优化性能
 
 ![image-20220822194511218](readme.assets/image-20220822194511218.png)
 
