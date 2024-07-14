@@ -622,6 +622,47 @@ useRef() 一般拿来标记dom，偶尔情况下可以存储临时变量
 ### 外部状态
 
 *const* [state, dispatch] = useReducer(first, second, third)
+```tsx
+// 没有init函数时，每次组件都会读取值。有了init就会线执行init
+const initialState = { count: 0 };
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      return { count: state.count + 1 };
+    case 'decrement':
+      return { count: state.count - 1 };
+    default:
+      throw new Error();
+  }
+}
+
+// 第三个参数主要是，改变初始化的值。通过这种方式，我们可以确保组件在首次渲染时从本地存储中获取初始状态，而不必在每次渲染时都进行读取。
+function init(initialCount) {
+  const savedCount = localStorage.getItem('count');
+  return { count: savedCount ? parseInt(savedCount, 10) : initialCount };
+}
+
+import React, { useReducer, useEffect } from 'react';
+
+const Counter = ({ initialCount }) => {
+  const [state, dispatch] = useReducer(reducer, initialCount, init);
+
+  useEffect(() => {
+    localStorage.setItem('count', state.count);
+  }, [state.count]);
+
+  return (
+    <div>
+      <p>Count: {state.count}</p>
+      <button onClick={() => dispatch({ type: 'increment' })}>Increment</button>
+      <button onClick={() => dispatch({ type: 'decrement' })}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+```
 
 ![image-20220823131445045](readme.assets/image-20220823131445045.png)
 
