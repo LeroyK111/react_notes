@@ -1,6 +1,4 @@
 {
-  "accentColor": "",
-  "baseFontSize": 16,
-  "theme": "obsidian",
-  "showViewHeader": false
+  "baseFontSize": 15,
+  "baseFontSizeAction": true
 }

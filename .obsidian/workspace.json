@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "58348338be8e1a9f",
+    "id": "65a02d3aa5758d2a",
     "type": "split",
     "children": [
       {
-        "id": "6ae3dd481814bded",
+        "id": "41fb9b484d435586",
         "type": "tabs",
         "children": [
           {
-            "id": "29cbd84ce4c8aada",
+            "id": "00637ee6cd6be3eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,27 +27,28 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c0a7a14e1da3a2dc",
+    "id": "c3ff1a66ce32a0ae",
     "type": "split",
     "children": [
       {
-        "id": "fdd17271653596eb",
+        "id": "d0f03f665bc93b4d",
         "type": "tabs",
         "children": [
           {
-            "id": "739195e2f95fa4e5",
+            "id": "0976b126a590353d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
             }
           },
           {
-            "id": "0fd50a1e2fab9a70",
+            "id": "49eb3db8ca93007f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -64,17 +65,7 @@
             }
           },
           {
-            "id": "1f44bc8a5ea1a172",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
-            }
-          },
-          {
-            "id": "f384a6bbd0c63a45",
+            "id": "a22bd9107c2f4296",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -90,15 +81,15 @@
     "width": 200
   },
   "right": {
-    "id": "a5791096868f339c",
+    "id": "dfe7a03d0a6e8278",
     "type": "split",
     "children": [
       {
-        "id": "3b2cad5a0ef0461c",
+        "id": "9ac45a8df4ec604d",
         "type": "tabs",
         "children": [
           {
-            "id": "411fa1d6fff8880b",
+            "id": "05ec097a13b2c9c6",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -117,39 +108,43 @@
             }
           },
           {
-            "id": "8dce51e0478205a3",
+            "id": "91c7eecfec3f84eb",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "readme 的出链列表"
+              "title": "出链"
             }
           },
           {
-            "id": "b24d0647e93c1d4d",
+            "id": "b04bf4249701472c",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "标签"
             }
           },
           {
-            "id": "baf336397c470f4e",
+            "id": "b3199d540774d5d8",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "readme.md"
+                "file": "readme.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "readme 的大纲"
@@ -160,7 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,52 +167,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "29cbd84ce4c8aada",
+  "active": "00637ee6cd6be3eb",
   "lastOpenFiles": [
-    "lastReact/src/page/testCreate.tsx",
-    "教程版/myapp-ts/node_modules/fsevents",
-    "教程版/myapp2/src/hks/10useImperativeHandle.js",
-    "教程版/myapp2/node_modules/fsevents",
-    "教程版/myapp/node_modules/fsevents",
     "react19.md",
-    "readme.md",
-    "DrCow/README.md",
-    "DrCow/vite.config.ts.timestamp-1711722017881-e62afea7be1c6.mjs",
-    "ide-2.7.0/js/ide.js",
-    "ide-2.7.0/css/ide.css",
-    "ide-2.7.0/images/judge0_background.png",
-    "ide-2.7.0/third_party/download.js",
-    "ide-2.7.0/images/judge0_icon.png",
-    "ide-2.7.0/CODE_OF_CONDUCT.md",
-    "ide-2.7.0/js",
-    "ide-2.7.0/third_party",
-    "ide-2.7.0/README.md",
-    "DrCow/node_modules/@typescript-eslint/eslint-plugin/docs/rules/camelcase.md",
-    "DrCow/node_modules/@typescript-eslint/eslint-plugin/docs/rules/TEMPLATE.md",
-    "DrCow/node_modules/@typescript-eslint/eslint-plugin/docs/rules/README.md",
-    "DrCow/node_modules/@humanwhocodes/config-array/node_modules/brace-expansion/README.md",
-    "DrCow/node_modules/@humanwhocodes/config-array/node_modules/minimatch/README.md",
-    "DrCow/node_modules/@eslint/eslintrc/node_modules/minimatch/README.md",
-    "DrCow/node_modules/@eslint/eslintrc/node_modules/brace-expansion/README.md",
-    "DrCow/node_modules/typo-js/dictionaries/en_US/README.md",
-    "DrCow/node_modules/glob/node_modules/brace-expansion/README.md",
-    "DrCow/node_modules/glob/node_modules/minimatch/README.md",
-    "DrCow/node_modules/fast-glob/node_modules/glob-parent/README.md",
-    "DrCow/node_modules/fast-glob/node_modules/glob-parent/CHANGELOG.md",
-    "DrCow/node_modules/eslint/node_modules/minimatch/README.md",
-    "DrCow/node_modules/eslint/node_modules/brace-expansion/README.md",
-    "DrCow/node_modules/chokidar/node_modules/glob-parent/README.md",
-    "DrCow/node_modules/chokidar/node_modules/glob-parent/CHANGELOG.md",
-    "DrCow/node_modules/ajv/lib/dotjs/README.md",
-    "DrCow/node_modules/@swc/core/bindings/README.md",
-    "DrCow/node_modules/style-mod/src/README.md",
-    "DrCow/node_modules/marked/man/marked.1.md",
-    "DrCow/node_modules/date-fns/docs/logotype.svg",
-    "DrCow/node_modules/date-fns/docs/logo.svg",
-    "readme.assets/image-20220825143322957.png",
-    "readme.assets/image-20220809234315886.png",
-    "readme.assets/image-20220809231911572.png",
-    "umiapp/src/assets/yay.jpg",
-    "src/assets/yay.jpg"
+    "readme.md"
   ]
 }
