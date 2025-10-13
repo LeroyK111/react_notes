@@ -5,6 +5,10 @@ import { useActionState } from 'react';
 import { useOptimistic } from 'react';
 import { Suspense, use } from 'react';
 
+/**
+ * @author Leroy
+ * 这是 React 19 的关键支撑。你不一定要手动写 useMemo/useCallback，编译器可以在很多情况下替你做优化。你需要了解其 caveat、兼容性、如何开启、以及可能的 lint 报错。
+*/
 
 const updateName = async (name) => {
   return "@222";
@@ -223,3 +227,4 @@ function Child() {
   const theme = React.useContext(ThemeContext);
   return <div>Theme: {theme}</div>;
 }
+
